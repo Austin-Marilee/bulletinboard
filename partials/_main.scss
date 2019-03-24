@@ -80,6 +80,7 @@
       max-width: 600px;
       grid-column: 1 / span 2;
       margin: 10px auto;
+      background: url('images/barcode_horizontal_2nd.png') 105% 45% no-repeat, url('images/blue-push-pin-50.png') 50% 0% no-repeat, #ffffff;
     }
     @include breakpoint(medium) {
       grid-column: 2 / 3;
