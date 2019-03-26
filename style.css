@@ -241,35 +241,45 @@ header h2 {
 }
 
 .benefits {
-  width: 60%;
+  width: 180px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 25px;
   padding: 20px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background: url("images/barcode_horizontal_2nd.png") 42% 99% no-repeat, url("images/blue-push-pin-50.png") 64% 0% no-repeat, #ffffff;
+  height: 445px;
+  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/blue-push-pin-50.png") 64% 0% no-repeat, #ffffff;
   background-size: 196px, 50px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
 }
 
 .benefits h3 {
-  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 45em) {
+  .benefits h3 {
+    margin: 0px 0px 5px 20px;
+    text-align: left;
+  }
 }
 
 .benefits p {
   font-size: 0.9rem;
   line-height: 1.2rem;
-  padding-right: 20px;
-  padding-bottom: 40px;
+  padding: 5px 20px 1em 20px;
+  border-bottom: 8px solid #f2b975;
 }
 
 @media (min-width: 45em) {
   .benefits p {
     line-height: 1.2rem;
     padding-right: 120px;
+    padding-top: 0;
+    border-bottom: none;
   }
 }
 
@@ -280,6 +290,7 @@ header h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
+    height: auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
