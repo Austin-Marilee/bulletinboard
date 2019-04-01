@@ -63,10 +63,17 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   header h2 {
     top: 100px;
     right: -495px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 75.1em) {
+  header h2 {
+    right: -380px;
   }
 }
 
@@ -100,10 +107,17 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   .summary {
     top: 190px;
     left: 590px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 75.1em) {
+  .summary {
+    left: 533px;
   }
 }
 
@@ -146,7 +160,7 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   .preamble {
     margin-left: 0;
   }
@@ -168,6 +182,12 @@ header h2 {
   font-size: 0.9rem;
   margin: 0 0 20px 0;
   padding: 30px;
+  /*@include breakpoint (medium) {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    max-width: 300px;
+  }*/
 }
 
 .explanation h3 {
@@ -182,7 +202,7 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 75.1em) {
   .explanation {
     position: absolute;
     top: 150px;
@@ -201,22 +221,21 @@ header h2 {
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border: 20px outset #4b5548;
   background-color: #efd9bf;
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 .participation h3 {
-  margin: 40px 0 0 0;
+  margin: 40px 0 0 10px;
   padding: 10px;
   font-size: 1.2rem;
-  text-align: right;
 }
 
 .participation p {
   font-size: 0.9rem;
   line-height: 1.2rem;
-  text-align: right;
-  margin: 0 0 0 20px;
-  padding: 5px 20px;
+  margin: 0;
+  padding: 5px 20px 25px 20px;
 }
 
 @media (min-width: 45em) {
@@ -239,7 +258,7 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   .participation {
     -webkit-transform: rotate(-3deg);
             transform: rotate(-3deg);
@@ -293,6 +312,12 @@ header h2 {
   }
 }
 
+@media (min-width: 35.9em) {
+  .benefits {
+    margin: -24px 0px 7px 90px;
+  }
+}
+
 @media (min-width: 45em) {
   .benefits {
     width: 90%;
@@ -310,12 +335,12 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 75.1em) {
   .benefits {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
-    margin: 250px -20px;
+    margin: 250px 29px;
     max-width: 700px;
     max-height: 200px;
   }
@@ -362,7 +387,7 @@ header h2 {
   }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   .requirements {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -379,15 +404,17 @@ p[role=contentinfo] {
   max-width: 100%;
   text-align: right;
   padding: 75px 5% 75px 15%;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
+
 p[role=contentinfo] a {
   color: #ffffff;
   font-weight: normal;
 }
+
 @media (min-width: 45em) {
   p[role=contentinfo] {
-    bottom: -120px;
+    bottom: -180px;
     padding: 75px 5% 75px 55%;
   }
 }
@@ -601,7 +628,7 @@ p[role=contentinfo] a {
   color: #382519;
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   .design-selection {
     font-size: 0.9rem;
     position: absolute;
@@ -621,7 +648,7 @@ p[role=contentinfo] a {
 }
 
 .zen-resources {
-  padding: 70px 20px 100px 20px;
+  padding: 20px 20px 200px 20px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   -webkit-transform: rotate(-5deg);
@@ -631,10 +658,10 @@ p[role=contentinfo] a {
   top: 0px;
   margin: auto;
   background-color: #ec637d;
-  background-image: url("images/blue-leaves.png");
+  background-image: url("images/blue-leaves-left.png");
   background-repeat: no-repeat;
-  background-size: 100px 200px;
-  background-position: right bottom;
+  background-size: 100px 220px;
+  background-position: 120px bottom;
   font-size: 0.8em;
 }
 
@@ -673,7 +700,7 @@ p[role=contentinfo] a {
 
 .zen-resources li {
   line-height: 1.4rem;
-  font-size: 0.9rem;
+  font-size: 1.1em;
 }
 
 .zen-resources li a:link {
@@ -703,15 +730,11 @@ p[role=contentinfo] a {
   color: #ffffff;
 }
 
-@media (min-width: 65em) {
+@media (min-width: 53.125em) {
   .zen-resources {
     z-index: 1;
     left: 100px;
     margin-top: -50px;
-    font-size: 1.4rem;
-  }
-  .zen-resources li {
-    font-size: 1.2rem;
   }
 }
 
@@ -809,119 +832,6 @@ html {
 }
 
 body {
-  font: 1em georgia, sans-serif;
-  line-height: 1.5rem;
-  color: #382519;
-  background: #b8c8cc;
-  margin: 0;
-  padding: 0;
-  font-family: Lora, Georgia, serif;
-}
-
-p {
-  margin-top: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-}
-
-h2 {
-  text-transform: uppercase;
-}
-
-h3 {
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  color: #382519;
-}
-
-.preamble h3,
-.explanation h3,
-.zen-resouces h3,
-.preamble,
-.explanation,
-.zen-resources {
-  color: #ffffff;
-}
-
-h1,
-h2,
-.summary,
-.benefits,
-.requirements {
-  background-color: #ffffff;
-}
-
-a:link {
-  font-weight: bold;
-  text-decoration: none;
-  color: #382519;
-}
-
-a:visited {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover {
-  color: #ba8563;
-}
-
-a:active {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-abbr {
-  border-bottom: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-/* specific divs */
-.page-wrapper {
-  border-top: 150px solid #382519;
-  margin: 0 30px;
-  padding: 0 40px 200px 40px;
-  background-image: url("images/burlap.jpg");
-  background-size: 500px;
-  background-repeat: repeat;
-  position: relative;
-}
-
-@media (min-width: 45em) {
-  .page-wrapper {
-    margin: 0 30px;
-    padding: 0 40px;
-  }
-}
-
-@media (min-width: 65em) {
-  .page-wrapper {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
-/* basic elements */
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
   background: #b8c8cc;
@@ -977,14 +887,17 @@ a:link {
   text-decoration: none;
   color: #382519;
 }
+
 a:visited {
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
 }
+
 a:hover {
   color: #ba8563;
 }
+
 a:active {
   font-weight: bold;
   text-decoration: none;
@@ -1009,13 +922,15 @@ li {
   margin: 0 30px;
   padding: 0 40px 200px 40px;
 }
+
 @media (min-width: 45em) {
   .page-wrapper {
     margin: 0 30px;
     padding: 0 40px;
   }
 }
-@media (min-width: 65em) {
+
+@media (min-width: 53.125em) {
   .page-wrapper {
     margin: auto;
     max-width: 1200px;
