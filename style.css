@@ -9,6 +9,35 @@
 /* SCSS variables */
 /* Colors */
 /* Pin image */
+@-webkit-keyframes pushpin {
+  0% {
+    background-position-y: 4px;
+  }
+  50% {
+    background-position-y: 5px;
+  }
+  75% {
+    background-size: 33px;
+  }
+  100% {
+    background-position-y: 5px;
+  }
+}
+@keyframes pushpin {
+  0% {
+    background-position-y: 4px;
+  }
+  50% {
+    background-position-y: 5px;
+  }
+  75% {
+    background-size: 33px;
+  }
+  100% {
+    background-position-y: 5px;
+  }
+}
+
 /* Fonts */
 /* Media Breaks */
 /* SCSS Mixins */
@@ -32,8 +61,8 @@ header h1 {
             transform: translateX(-100px);
     width: 255px;
     height: 230px;
-    margin-top: -170px;
-    background-image: url(images/logo.png);
+    margin-top: -180px;
+    background-image: url(images/logo_blue.png);
     background-repeat: no-repeat;
     background-size: 300px 300px;
     background-position: center center;
@@ -49,11 +78,19 @@ header h2 {
   line-height: 1em;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
   margin: auto;
   padding: 50px 25px 5px 25px;
+}
+
+header h2:hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 @media (min-width: 45em) {
@@ -134,9 +171,17 @@ header h2 {
           transform: rotate(-1deg);
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.preamble:hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .preamble.preamble h3 {
@@ -176,9 +221,10 @@ header h2 {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   background-color: #ec637d;
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
   font-size: 0.9rem;
   margin: 0 0 20px 0;
   padding: 30px;
@@ -188,6 +234,13 @@ header h2 {
     right: 50px;
     max-width: 300px;
   }*/
+}
+
+.explanation:hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .explanation h3 {
@@ -240,10 +293,9 @@ header h2 {
 
 @media (min-width: 45em) {
   .participation {
-    background: url("images/red-leaves.png") -15% 25% no-repeat, url("images/blue-push-pin-50.png") 50% 0% no-repeat, #efd9bf;
-    background-size: 150px, 50px;
+    background: url("images/red-leaves.png") -15% 25% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #efd9bf;
+    background-size: 150px, 35px;
     margin-left: 15px;
-    width: 100%;
   }
   .participation h3 {
     margin: 40px 10px 0 0;
@@ -279,8 +331,8 @@ header h2 {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   height: 445px;
-  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/blue-push-pin-50.png") 64% 0% no-repeat, #ffffff;
-  background-size: 196px, 50px;
+  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 64% 0% no-repeat, #ffffff;
+  background-size: 196px, 30px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
 }
@@ -330,8 +382,8 @@ header h2 {
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
     margin: 10px auto;
-    background: url("images/barcode.png") 105% 45% no-repeat, url("images/blue-push-pin-50.png") 50% 0% no-repeat, #ffffff;
-    background-size: 130px, 50px;
+    background: url("images/barcode.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+    background-size: 130px, 30px;
   }
 }
 
@@ -354,9 +406,17 @@ header h2 {
   margin-right: auto;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.requirements:hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .requirements h3 {
@@ -430,9 +490,10 @@ p[role=contentinfo] a {
 .design-archives {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
   position: absolute;
   top: -20px;
   left: 25px;
@@ -445,6 +506,13 @@ p[role=contentinfo] a {
   background-color: #efd9bf;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+}
+
+.design-archives:hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-archives ul {
@@ -484,15 +552,23 @@ p[role=contentinfo] a {
   margin-left: auto;
   margin-right: auto;
   text-transform: capitalize;
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
   font-family: Lora, Georgia, serif;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-size: 1.4rem;
   background-color: #efd9bf;
   text-align: center;
+}
+
+.design-selection h3:hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection ul {
@@ -544,9 +620,10 @@ p[role=contentinfo] a {
 .design-selection li:nth-child(1) {
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -555,12 +632,20 @@ p[role=contentinfo] a {
   grid-row: 1 / 2;
 }
 
+.design-selection li:nth-child(1):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+}
+
 .design-selection li:nth-child(2) {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -569,50 +654,105 @@ p[role=contentinfo] a {
   grid-row: 1 / 2;
 }
 
+.design-selection li:nth-child(2):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+}
+
 .design-selection li:nth-child(3) {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.design-selection li:nth-child(3):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection li:nth-child(4) {
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.design-selection li:nth-child(4):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection li:nth-child(5) {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.design-selection li:nth-child(5):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection li:nth-child(6) {
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.design-selection li:nth-child(6):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection li:nth-child(7) {
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.design-selection li:nth-child(7):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection li:nth-child(8) {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-  background-image: url("images/blue-push-pin-50.png");
+  background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+.design-selection li:nth-child(8):hover {
+  -webkit-animation: pushpin 1s;
+          animation: pushpin 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
 .design-selection li a:nth-child(2) {
@@ -914,24 +1054,22 @@ li {
 
 /* specific divs */
 .page-wrapper {
-  background-image: url("images/burlap.jpg");
-  background-repeat: repeat;
-  background-size: 500px;
   border-top: 150px solid #382519;
   position: relative;
-  margin: 0 30px;
+  margin: 0 0;
   padding: 0 40px 200px 40px;
 }
 
 @media (min-width: 45em) {
   .page-wrapper {
-    margin: 0 30px;
+    margin: 0 0;
     padding: 0 40px;
   }
 }
 
 @media (min-width: 53.125em) {
   .page-wrapper {
+    background-image: url("images/burlap.jpg");
     margin: auto;
     max-width: 1200px;
   }
