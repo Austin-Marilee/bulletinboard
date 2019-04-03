@@ -3,29 +3,25 @@
 //"So What Is This About?"card--pink card with white text
 .explanation {
   @include box-shadow;
-  @include center(75%);
-  @include margin-padding(0 0 20px 0, 30px);
+  @include center(80%);
+  @include margin-padding(30px 0 20px 0, 30px);
   @include pin;
   background-color: $color-4;
   font-size: $font-size-small;
   transform: rotate(1deg);
-
   & h3 {
-    font-size: $font-size-small;
+    font-size: $font-size-medium;
     margin-top: 20px;
     text-align: center;
   }
-
   @include breakpoint (small) {
     & h3 {
       font-size: $font-size-medium;
     }
   }
-
   @include breakpoint (medium) {
     max-width: 300px;
   }
-
   @include breakpoint(large) {
     max-width: 350px;
     position: absolute;
@@ -49,16 +45,13 @@
   top: 20px;
   width: 80%;
   z-index: -1;
-
   @include breakpoint(small) {
     width: 100%;
   }
-
   @include breakpoint(medium) {
     background-position: 80% 100%, 50% 0%;
     background-size: 400px, 40px;
   }
-
   @include breakpoint(large) {
     background-position: 80% 95%, 50% 3%;
   }
@@ -72,42 +65,35 @@
   margin-bottom: 30px;
   padding-bottom: 50px;
   transform: rotate(-2deg);
-
   & h3 {
     @include margin-padding(40px 0 0 10px, 60px 0 0 40px);
     font-family: $cursive-font;
     font-size: $font-size-extra-large;
     text-transform: capitalize;
   }
-
   & p {
     font-size: $font-size-small;
     line-height: 1.2rem;
     @include margin-padding(0, 5px 100px 5px 50px);
   }
-
   @include breakpoint(small) {
     & h3 {
       @include margin-padding(60px 10px 0 0, 10px);
       text-align: right;
     }
-
     & p {
       @include margin-padding(0 0 0 20px, 5px 20px);
       margin-left: 70px;
       text-align: right;
     }
   }
-
   @include breakpoint(medium) {
     background-size: 600px;
-
     p {
       font-size: $font-size-medium;
       line-height: 1.5rem;
     }
   }
-
   @include breakpoint(large) {
     margin-top: 30px;
   }
@@ -116,33 +102,28 @@
 //"Benefits"ticket--white ticket with barcode and gold line  
 .benefits {
   @include center(100%, 180px);
-  @include margin-padding(0 0 20px 25px, 20px);
+  @include margin-padding(40px 0 40px 25px, 20px);
   @include box-shadow;
   background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
   padding-top: 35px;
   transform: rotate(2deg);
-
   & h3 {
     text-align: center;
   }
-
   & p {
     border-bottom: 8px solid $color-7;
     font-size: $font-size-small;
     line-height: 1.2rem;
     padding: 5px 20px 1em 20px;
   }
-
   &:hover {
     animation: hover_flutter 1s ease;
   }
-
   @include breakpoint(xsmall) {
     margin: -24px 0px 7px 90px;
   }
-
   @include breakpoint(small) {
     @include center(100%);
     background: url('images/barcode.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
@@ -151,12 +132,10 @@
     height: auto;
     margin: 10px auto;
     max-width: 600px;
-
     & h3 {
       margin: 0 0 5px 20px;
       text-align: left;
     }
-
     & p {
       border-bottom: none;
       line-height: 1.2rem;
@@ -216,21 +195,22 @@ p[role=contentinfo] {
   background-color: #382519;
   bottom: -142px;
   color: #ffffff;
-  font-size: $font-size-medium;
+  font-size: $font-size-large;
   left: 0px;
   max-width: 100%;
   padding: 3rem;
-  padding-right: 15px;
   position: absolute;
-  text-align: right;
-
+  text-align: center;
   & a {
     color: $color-6;
     font-weight: normal
   }
-
   @include breakpoint(small) {
-    bottom: -180px;
-    padding: 75px 5% 75px 55%;
+    padding: 60px 5% 90px 55%;
+    text-align: right;
+    font-size: $font-size-medium;
+  }
+  @include breakpoint(medium) {
+    bottom: -160px;
   }
 }

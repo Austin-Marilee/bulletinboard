@@ -51,6 +51,10 @@
   }
 }
 
+.indicator {
+  display: none;
+}
+
 // 8 cream colored notes with dark brown text--one per site/creator (8 notes, one title card) 
 .design-selection {
   @include center(100%);
@@ -183,16 +187,16 @@
 //"Resources" ribbon--Pink ribbon with white text and green floral image
 .zen-resources {
   @include box-shadow;
-  background: url('images/blue-leaves.png') 75% 120% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background: url('images/blue-leaves.png') 85% 120% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
   background-color: $color-4;
   background-size: 150px, 40px;
+  font-family: $primary-font;
   margin: auto;
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
   top: 0px;
-  transform: rotate(-2deg);
-
+  transform: rotate(-5deg);
   &:before {
     border-right: 140px solid transparent;
     border-top: 75px solid $color-4;
@@ -205,7 +209,6 @@
     position: absolute;
     width: 0;
   }
-
   &:after {
     border-left: 140px solid transparent;
     border-top: 75px solid $color-4;
@@ -218,45 +221,35 @@
     right: 0;
     width: 0;
   }
-
   & a {
-    font-family: $secondary-font;
     font-weight: 100;
   }
-
   & h3 {
     color: $color-6;
-    font-family: $cursive-font;
-    font-size: $font-size-extra-large;
+    font-size: $font-size-medium;
     margin: 25px 0 5px 0;
     text-transform: capitalize;
   }
-
   & li {
-    font-size: $font-size-mid;
-    line-height: 1.4rem;
-
+    font-size: $font-size-medium;
+    line-height: 1.6rem;
     a:hover {
       color: $color-3;
     }
-
     a:link {
       color: $color-6;
       font-weight: normal;
     }
   }
-
   & ul {
     @include margin-padding(0, 0);
   }
-
   @include breakpoint(small) {
     left: 50px;
     margin: 0;
     top: 15px;
 
   }
-
   @include breakpoint(medium) {
     left: 100px;
     margin-top: -50px;

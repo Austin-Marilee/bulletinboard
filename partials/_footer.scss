@@ -8,13 +8,11 @@ footer {
     padding: 30px 0;
     position: absolute;
     width: 100%;
-
     & a {
         background: transparent;
     }
-
     @include breakpoint(small) {
-        bottom: -300px;
+        bottom: -270px;
     }
 }
 
