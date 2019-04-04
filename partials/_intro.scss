@@ -81,8 +81,7 @@ header h2 {
   @include breakpoint(medium) {
     top: 205px;
     left: 560px;
-  }
-
+  } 
   @include breakpoint(large) {
     left: 553px;
     top: 145px;
