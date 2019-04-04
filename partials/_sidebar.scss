@@ -1,7 +1,7 @@
 //sidebar (aside) section including Design Selection, Design Archives, and Zen Resources
 
 .sidebar .wrapper {
-  font: 1.2rem verdana, $primary-font;
+  font: 1.2rem $primary-font;
 }
 
 .sidebar li a:visited {
@@ -11,7 +11,6 @@
 //"Archives"links card--cream card with brown text at top right of screen
 .design-archives {
   @include box-shadow;
-  font-size: $font-size-small;
   @include margin-padding(0 auto, 15px);
   @include pin;
   top: -20px;
@@ -20,46 +19,51 @@
   font-weight: normal;
   font-family: $secondary-font;
   background-color: $color-3;
-  transform: rotate(-2deg);
-
+  font-size: $font-size-small;
+  font-family: $primary-font;
+  font-weight: normal;
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  max-width: 200px;
+  transform: rotate(-5deg);
+  & h3 {
+    font-family: $primary-font;
+    margin: 35px 0 0 0;
+    text-transform: capitalize;
+  }
   & ul {
     @include margin-padding(0, 0);
     grid-column: 1 / 3;
   }
-
-  & h3 {
-    margin: 25px 0 5px 0;
-    text-transform: capitalize;
-    font-family: $secondary-font;
+  & li {
+    line-height: 1.5rem;
   }
-
-  @include breakpoint(small) {
-    top: -50px;
-    left: 70%;
-
-    transform: rotate(0deg);
-    & h3 {
-      font-size: $font-size-mid;
-      margin: 25px 0 0 0;
-    }
-  }
-  
-  @include breakpoint (medium) {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    max-width: 300px;
-  }
-  @include breakpoint(large) {
-    position: absolute;
-    top: 150px;
-    right: 50px;//32px
-    max-width: 350px;
-  }
-
   &:hover {
     animation: hover_flutter2 1s ease;
   }
+  @include breakpoint(xsmall) {
+    @include margin-padding(0 auto, 20px);
+    font-size: $font-size-medium;
+    & li {
+      line-height: 2.0rem;
+    }
+  }
+  @include breakpoint(small) {
+   
+    left: 70%;
+    top: -75px;
+    transform: rotate(0deg);
+    transform: scale(.9);
+    font-weight: normal;
+    & h3 {
+      margin: 25px 0 0 0;
+    }
+  }
+}
+
+.indicator {
+  display: none;
 }
 
 // 8 cream colored notes with dark brown text--one per site/creator (8 notes, one title card) 
@@ -67,35 +71,27 @@
   @include center(100%);
   z-index: 20;
   & h3 {
-    //moved from top down to be by links so more intuitive
-    padding: 45px 10px;
-    @include center(250px);
-    text-transform: capitalize;
-    @include pin;
-    font-family: $secondary-font;
     @include box-shadow;
-    font-size: $font-size-large;
+    @include center(250px);
+    @include pin;
     background-color: $color-3;
+    font-family: $cursive-font;
+    font-size: $font-size-extra-large;
+    padding: 55px 10px;
+    text-transform: capitalize;
     text-align: center;
-  }
-
-  & ul {
-    display: grid;
-    @include margin-padding(20px auto, 0);
-    max-width: 500px;
   }
 
   & li {
-    @include center(70%);
     @include box-shadow;
-    font-size: 0.8rem;
-    font-size: .8rem;
-    @include margin-padding(10px, 35px 15px 20px 15px);
+    @include center(70%);
+    @include margin-padding(10px, 45px 15px 20px 15px);
+    background-color: $color-3;
     display: flex;
+    font-size: 0.8rem;
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
-    background-color: $color-3;
     transition: 0.5s;
 
     @include breakpoint(small) {
@@ -103,46 +99,52 @@
         @include margin-padding(40px 10px 0 0, 10px);
         text-align: right;
       }
+
       @include center(175px);
       height: 125px;
       font-size: $font-size-medium;
-
       padding: 50px 20px;
     }
   }
 
+  & ul {
+    @include margin-padding(20px auto, 0);
+    display: grid;
+    max-width: 500px;
+  }
+
   & li:nth-child(1) {
-    transform: rotate(-3deg);
     @include pin;
+    background-size: 35px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-size: 35px;
+    transform: rotate(-3deg);
   }
 
   & li:nth-child(2) {
-    transform: rotate(3deg);
     @include pin;
+    background-size: 35px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-size: 35px;
+    transform: rotate(3deg);
   }
 
   & li:nth-child(3) {
-    transform: rotate(2deg);
     @include pin;
     background-size: 35px;
+    transform: rotate(2deg);
   }
 
   & li:nth-child(4) {
-    transform: rotate(-5deg);
     @include pin;
     background-size: 35px;
+    transform: rotate(-5deg);
   }
 
   & li:nth-child(5) {
-    transform: rotate(3deg);
     @include pin;
     background-size: 35px;
+    transform: rotate(3deg);
   }
 
   & li:nth-child(6) {
@@ -157,9 +159,9 @@
   }
 
   & li:nth-child(8) {
-    transform: rotate(2deg);
     @include pin;
     background-size: 35px;
+    transform: rotate(2deg);
   }
 
   & li a:nth-child(2) {
@@ -175,12 +177,13 @@
   }
 
   @include breakpoint(medium) {
-    font-size: $font-size-small;
-    position: absolute;
-    bottom: 10%;
-    left: 35%;
     @include center(80%);
+    bottom: 10%;
+    font-size: $font-size-small;
+    left: 35%;
+    position: absolute;
     transform: translateY(100px);
+
     p {
       font-size: $font-size-medium;
       line-height: 1.5rem;
@@ -194,85 +197,73 @@
 
 //"Resources" ribbon--Pink ribbon with white text and green floral image
 .zen-resources {
-  padding: 20px 20px 200px 20px;
   @include box-shadow;
-  transform: rotate(-2deg);
+  background: url('images/blue-leaves.png') 85% 120% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background-color: $color-4;
+  background-size: 150px, 40px;
+  font-family: $primary-font;
+  margin: auto;
   max-width: 200px;
+  padding: 20px 20px 200px 20px;
   position: relative;
   top: 0px;
-  margin: auto;
-  background-color: $color-4;
-  @include background-img (url('images/blue-leaves-left.png'),
-  no-repeat,
-  100px,
-  220px,
-  120px,
-  bottom,
-  0.8em);
-
+  transform: rotate(-5deg);
   &:before {
-    content: "";
-    position: absolute;
-    left: 0;
+    border-right: 140px solid transparent;
+    border-top: 75px solid $color-4;
     bottom: 0;
+    content: "";
+    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+    height: 0;
+    left: 0;
+    margin-bottom: -71px;
+    position: absolute;
     width: 0;
+  }
+  &:after {
+    border-left: 140px solid transparent;
+    border-top: 75px solid $color-4;
+    bottom: 0;
+    content: "";
+    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
     height: 0;
     margin-bottom: -71px;
-    border-top: 75px solid $color-4;
-    border-right: 140px solid transparent;
-    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
-  }
-
-  &:after {
-    content: "";
     position: absolute;
     right: 0;
-    bottom: 0;
     width: 0;
-    height: 0;
-    margin-bottom: -71px;
-    border-top: 75px solid $color-4;
-    border-left: 140px solid transparent;
-    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
   }
-
-  & ul {
-    @include margin-padding(0, 0);
+  & a {
+    font-weight: 100;
   }
-
+  & h3 {
+    color: $color-6;
+    font-size: $font-size-medium;
+    margin: 25px 0 5px 0;
+    text-transform: capitalize;
+  }
   & li {
-    line-height: 1.4rem;
-    font-size: $font-size-mid;
-
+    font-size: $font-size-medium;
+    line-height: 1.6rem;
+    a:hover {
+      color: $color-3;
+    }
     a:link {
       color: $color-6;
       font-weight: normal;
     }
-
-    a:hover {
-      color: $color-3;
-    }
   }
-
-  & a {
-    font-family: $secondary-font;
-    font-weight: 100;
+  & ul {
+    @include margin-padding(0, 0);
   }
-
   @include breakpoint(small) {
-    top: 15px;
     left: 50px;
     margin: 0;
-  }
+    top: 15px;
 
-  & h3 {
-    margin: 25px 0 5px 0;
-    color: $color-6;
   }
-
   @include breakpoint(medium) {
-    z-index: 1;
     left: 100px;
     margin-top: -50px;
+    z-index: 1;
   }
 }

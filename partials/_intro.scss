@@ -1,23 +1,25 @@
 //Intro section including Header, Summary, Preamble
+
 //Header with Logo image and text(h1)
 header h1 {
   background: transparent;
-  width: 155px;
-  height: 130px;
-  @include margin-padding(-155px auto 40px auto, 80px 30px 0px 30px);
-  vertical-align: middle;
-  @include background-img (url(images/logo.png),
+  @include background-img (url(images/logo_pink.png),
   no-repeat,
   225px,
   225px,
   center,
   center,
   0);
+  @include margin-padding(-155px auto 40px auto, 80px 30px 0px 30px);
+  height: 130px;
+  vertical-align: middle;
+  width: 155px;
+
   @include breakpoint(small) {
-    transform: translateX(-100px);
-    width: 255px;
     height: 230px;
     margin-top: -180px;
+    transform: translateX(-100px);
+    width: 255px;
     @include background-img (url(images/logo_blue.png),
     no-repeat,
     300px,
@@ -27,35 +29,36 @@ header h1 {
     0);
   }
 }
+
 //title (h2) for .summary/Beauty of CSS card
 header h2 {
+  @include box-shadow;
+  @include margin-padding(auto, 50px 90px 5px 25px);
+  @include pin;
+  background-color: $color-6;
+  color: $color-2;
   font-size: $font-size-medium;
   line-height: 1.2rem;
   width: 135px;
-  color: $color-2;
-  background-color: $color-6;
-  @include box-shadow;
-  @include pin;
-  @include margin-padding(auto, 50px 90px 5px 25px);
   @include breakpoint(small) {
+    left: 220px;
     position: absolute;
-    left: 180px;
+    top: 140px;
   }
   @include breakpoint(medium) {
-    top: 70px;
-    right: -495px;
+    right: -395px;
+    top: 115px;
     z-index: 10;
   }
   @include breakpoint(large) {
     right: -380px;
-
+    top: 55px;
   }
-
 }
+
 //"Beauty of CSS" card--white card with flower image (Title=header h2)
 .summary {
-  width: 200px;
-  @include margin-padding(0 auto 20px auto, 0 25px 160px 25px);
+  @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
   @include box-shadow;
   @include background-img (url('images/flower-combo.png'),
   no-repeat,
@@ -64,14 +67,17 @@ header h2 {
   right -180px,
   bottom -150px,
   .8em);
+  background-color: $color-6;
+  width: 200px;
+  z-index: 10;
   & p {
     width: 175px;
     line-height: 1.3rem;
   }
   @include breakpoint(small) {
     position: absolute;
-    top: 260px;
-    left: 400px;
+    top: 230px;
+    left: 440px;
   }
   @include breakpoint(medium) {
     top: 160px;
@@ -79,31 +85,35 @@ header h2 {
     z-index: 70;
   }
   @include breakpoint(large) {
-    left: 533px;
+    left: 553px;
+    top: 145px;
   }
 }
+
 //"The Road to Enlightenment card" --dark brown card with white text
 .preamble {
+  @include box-shadow;
   @include center(85%);
-  @include margin-padding(0 0 20px 0, 30px);
+  @include margin-padding(20px 0 15px 0, 30px);
+  @include pin;
   background-color: $color-2;
   color: $color-6;
-  transform: rotate(-1deg);
-  @include box-shadow;
-  @include pin;
   text-align: center;
+  transform: rotate(-1deg);
   &.preamble h3 {
     font-size: $font-size-medium;
   }
   &.preamble p {
     font-size: $font-size-small;
   }
+
   @include breakpoint(small) {
     @include center (75%);
-    margin-top: 150px;
+    margin-top: 140px;
     transform: rotate(-4deg);
   }
   @include breakpoint(medium) {
-    margin: 110px 0 0 0;
+    @include center (70%);
+    margin: 140px 0 0 0;
   }
 }

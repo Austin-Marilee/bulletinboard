@@ -4,19 +4,17 @@
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
+@import 'partials/normalize';
 @import url('https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 @import 'partials/variables';
 @import 'partials/mix-ins';
-@import 'partials/typography';
+@import "partials/typography";
 @import 'partials/intro';
 @import 'partials/main';
 @import 'partials/sidebar';
 @import 'partials/footer';
 @import 'partials/keyframes';
-@import 'partials/normalize';
-
 
 /* basic elements */
 html {
@@ -29,65 +27,13 @@ body {
   @include margin-padding(0, 0);
   background: $color-1;
   color: $color-2;
+  font-family: $primary-font;
   font-size: 16pt;
   line-height: 1.5rem;
-  font-family: $primary-font;
 }
 
 p {
   margin-top: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $primary-font;
-}
-
-h2 {
-  text-transform: uppercase;
-}
-
-h3 {
-  color: $color-2;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.preamble h3,
-.explanation h3,
-.zen-resouces h3,
-.preamble,
-.explanation,
-.zen-resources {
-  color: $color-6;
-}
-
-h1,
-h2,
-.summary,
-.benefits,
-.requirements {
-  background-color: $color-6;
-}
-
-a {
-  &:link {
-    @include links(bold, none, $color-2);
-  }
-  &:visited {
-    @include links(bold, none, $color-6);
-  }
-  &:hover {
-    color: lighten($color-2, 40%);
-  }
-  &:active {
-    @include links(bold, none, $color-6);
-  }
 }
 
 abbr {
@@ -100,12 +46,14 @@ li {
 
 /* specific divs */
 .page-wrapper {
+  @include margin-padding(0 0, 0 40px 200px 40px);
   border-top: 150px solid $color-2;
   position: relative;
-  @include margin-padding(0 0, 0 40px 200px 40px);
+
   @include breakpoint(small) {
     @include margin-padding(0 0, 0 40px);
   }
+
   @include breakpoint(medium) {
     background-image: url('images/burlap.jpg');
     margin: auto;
