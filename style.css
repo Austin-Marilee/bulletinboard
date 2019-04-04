@@ -532,8 +532,8 @@ header h2:hover {
 
 @media (min-width: 53.125em) {
   .summary {
-    top: 160px;
-    left: 590px;
+    top: 205px;
+    left: 560px;
     z-index: 70;
   }
 }
