@@ -14,19 +14,15 @@
     margin-top: 20px;
     text-align: center;
   }
-  @include breakpoint (small) {
-    & h3 {
-      font-size: $font-size-medium;
-    }
-  }
   @include breakpoint (medium) {
-    max-width: 300px;
+    max-width: 80%;
   }
   @include breakpoint(large) {
+    transform: rotate(3deg);
     max-width: 350px;
     position: absolute;
-    right: 50px;
-    top: 150px;
+    right: 30px;
+    top: 130px;
   }
 }
 
@@ -50,12 +46,11 @@
   }
   @include breakpoint(medium) {
     background-position: 80% 100%, 50% 0%;
-    background-size: 400px, 40px;
+    background-size: 350px, 40px;
   }
   @include breakpoint(large) {
     background-position: 80% 95%, 50% 3%;
   }
-
 }
 
 .participation {
@@ -67,9 +62,8 @@
   transform: rotate(-2deg);
   & h3 {
     @include margin-padding(40px 0 0 10px, 60px 0 0 40px);
-    font-family: $cursive-font;
-    font-size: $font-size-extra-large;
-    text-transform: capitalize;
+    font-size: $font-size-medium;
+    text-transform: uppercase;
   }
   & p {
     font-size: $font-size-small;
@@ -83,16 +77,13 @@
     }
     & p {
       @include margin-padding(0 0 0 20px, 5px 20px);
+      line-height: 1.5rem;
       margin-left: 70px;
       text-align: right;
     }
   }
   @include breakpoint(medium) {
     background-size: 600px;
-    p {
-      font-size: $font-size-medium;
-      line-height: 1.5rem;
-    }
   }
   @include breakpoint(large) {
     margin-top: 30px;

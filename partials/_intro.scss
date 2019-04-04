@@ -40,18 +40,16 @@ header h2 {
   font-size: $font-size-medium;
   line-height: 1.2rem;
   width: 135px;
-
   @include breakpoint(small) {
     left: 220px;
     position: absolute;
+    top: 140px;
   }
-
   @include breakpoint(medium) {
     right: -395px;
-    top: 140px;
+    top: 115px;
     z-index: 10;
   }
-
   @include breakpoint(large) {
     right: -380px;
     top: 55px;
@@ -60,7 +58,7 @@ header h2 {
 
 //"Beauty of CSS" card--white card with flower image (Title=header h2)
 .summary {
-  @include margin-padding(0 auto 4  0px auto, 0 25px 160px 25px);
+  @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
   @include box-shadow;
   @include background-img (url('images/flower-combo.png'),
   no-repeat,
@@ -77,17 +75,16 @@ header h2 {
   }
   @include breakpoint(small) {
     position: absolute;
-    top: 260px;
+    top: 230px;
     left: 440px;
   }
-
   @include breakpoint(medium) {
-    top: 230px;
+    top: 205px;
     left: 560px;
   }
 
   @include breakpoint(large) {
-    left: 552px;
+    left: 553px;
     top: 145px;
   }
 }
