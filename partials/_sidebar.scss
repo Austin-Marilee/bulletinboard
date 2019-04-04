@@ -66,18 +66,28 @@
     text-transform: capitalize;
     text-align: center;
   }
+  & ul {
+    @include margin-padding(20px auto, 0);
+    display: grid;
+    grid-gap: 30px;
+    justify-items: center;
+    max-width: 500px;
+    transform: translateX(-20px);
+  }
   & li {
     @include box-shadow;
-    @include center(70%);
     @include margin-padding(10px, 45px 15px 20px 15px);
     background-color: $color-3;
     display: flex;
-    font-size: 0.8rem;
+    font-size: $font-size-mid;
     flex-flow: column nowrap;
+    height: 90px;
     justify-content: center;
+    margin: auto;
     text-align: center;
     transition: 0.5s;
-    @include breakpoint(small) {
+    width: 130px;
+    @include breakpoint(xsmall) {
       & h3 {
         @include margin-padding(40px 10px 0 0, 10px);
         text-align: right;
@@ -87,11 +97,12 @@
       font-size: $font-size-medium;
       padding: 50px 20px;
     }
-  }
-  & ul {
-    @include margin-padding(20px auto, 0);
-    display: grid;
-    max-width: 500px;
+    @include breakpoint(medium) {
+      @include center(150px);
+      height: 105px;
+      font-size: $font-size-medium;
+      padding: 50px 20px;
+    }
   }
   & li:nth-child(1) {
     @include pin;
@@ -147,7 +158,7 @@
   }
   @include breakpoint(medium) {
     @include center(80%);
-    bottom: 10%;
+    bottom: 7%;
     font-size: $font-size-small;
     left: 35%;
     position: absolute;
@@ -159,6 +170,9 @@
     ul {
       @include center(60%);
     }
+  }
+  @include breakpoint(large) {
+    bottom: 12%;
   }
 }
 
