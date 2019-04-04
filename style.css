@@ -639,6 +639,8 @@ header h2:hover {
 @media (min-width: 53.125em) {
   .explanation {
     max-width: 80%;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 }
 
@@ -656,10 +658,10 @@ header h2:hover {
 /*Cream, red-leaves and pin backgrounds*/
 .participation {
   background-color: #4b5548;
+  border: 30px solid #4b5548;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  border: 30px solid #4b5548;
-  margin: 30px auto 15px auto;
+  margin: 30px 0 15px -30px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   width: 100%;
@@ -667,7 +669,7 @@ header h2:hover {
 }
 
 .participation h3 {
-  margin: 40px 0 0 10px;
+  margin: 40px 0 0 -5px;
   padding: 10px;
   font-size: 1.3rem;
   -webkit-transform: rotate(-3deg);
@@ -678,45 +680,64 @@ header h2:hover {
   font-size: 1rem;
   line-height: 1.2rem;
   margin: 0;
-  padding: 5px 20px 25px 20px;
+  padding: 5px 25px 25px 20px;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
+}
+
+.participation p:nth-of-type(1) {
+  margin-left: -10px;
+}
+
+.participation p:nth-of-type(3) {
+  margin-left: 10px;
 }
 
 @media (min-width: 45em) {
   .participation {
     margin-left: 15px;
     padding: 0 10px 20px 40px;
+    width: 70%;
   }
   .participation h3 {
-    margin: 40px 10px 0 0;
+    margin: 40px 0 0 -40px;
     padding: 10px;
-    text-align: right;
   }
   .participation p {
     line-height: 1.4rem;
-    margin: 0 0 20px 30px;
-    padding: 5px 20px;
-    text-align: right;
+    width: 95%;
+  }
+  .participation p:nth-of-type(1) {
+    margin: 0 0 10px -25px;
+    padding: 5px 20px 0 0;
+  }
+  .participation p:nth-of-type(2) {
+    margin: 0 0 10px -15px;
+    padding: 5px 20px 0 0;
+  }
+  .participation p:nth-of-type(3) {
+    margin: 0 0 10px -5px;
+    padding: 5px 20px 0 0;
   }
 }
 
 @media (min-width: 53.125em) {
   .participation {
     padding: 0 10px 10px 50px;
+    text-align: right;
     -webkit-transform: rotate(-3deg);
             transform: rotate(-3deg);
   }
   .participation h3 {
-    margin: 30px 10px 0 0;
+    margin: 30px 40px 0 0;
   }
 }
 
 @media (min-width: 75.1em) {
   .participation {
-    padding: 0 40px 10px 60px;
+    padding: 0 20px 20px 100px;
     position: absolute;
-    margin: 40px 0 20px 15px;
+    margin: 60px 0 20px 0;
     width: 40%;
   }
 }
@@ -752,7 +773,7 @@ header h2:hover {
   background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
-  margin: 40px auto 40px;
+  margin: 30px auto 30px;
   padding: 35px 20px 20px 20px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
@@ -804,6 +825,13 @@ header h2:hover {
   }
 }
 
+@media (min-width: 53.125em) {
+  .benefits {
+    -webkit-transform: rotate(2deg) translateY(20px);
+            transform: rotate(2deg) translateY(20px);
+  }
+}
+
 @media (min-width: 75.1em) {
   .benefits {
     -ms-grid-column: 2;
@@ -812,6 +840,10 @@ header h2:hover {
     margin: 160px 0 200px 20px;
     max-height: 200px;
     max-width: 700px;
+    position: relative;
+    right: -20px;
+    -webkit-transform: rotate(2deg) translateY(0px);
+            transform: rotate(2deg) translateY(0px);
   }
 }
 
@@ -858,6 +890,12 @@ header h2:hover {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: 75.1em) {
+  .requirements {
+    margin: 60px auto 20px auto;
   }
 }
 
@@ -1020,6 +1058,14 @@ p[role=contentinfo] a {
           transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
+.design-selection ul {
+  margin: 20px auto;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  max-width: 500px;
+}
+
 .design-selection li {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -1061,14 +1107,6 @@ p[role=contentinfo] a {
     padding: 10px;
     text-align: right;
   }
-}
-
-.design-selection ul {
-  margin: 20px auto;
-  padding: 0;
-  display: -ms-grid;
-  display: grid;
-  max-width: 500px;
 }
 
 .design-selection li:nth-child(1) {
@@ -1236,7 +1274,7 @@ p[role=contentinfo] a {
     margin-right: auto;
     max-width: 80%;
     width: 90%;
-    bottom: 10%;
+    bottom: 3%;
     font-size: 1rem;
     left: 35%;
     position: absolute;

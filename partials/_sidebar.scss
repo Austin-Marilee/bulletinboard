@@ -80,6 +80,11 @@
     text-transform: capitalize;
     text-align: center;
   }
+  & ul {
+    @include margin-padding(20px auto, 0);
+    display: grid;
+    max-width: 500px;
+  }
   & li {
     @include box-shadow;
     @include center(70%);
@@ -101,11 +106,6 @@
       font-size: $font-size-medium;
       padding: 50px 20px;
     }
-  }
-  & ul {
-    @include margin-padding(20px auto, 0);
-    display: grid;
-    max-width: 500px;
   }
   & li:nth-child(1) {
     @include pin;
@@ -161,7 +161,7 @@
   }
   @include breakpoint(medium) {
     @include center(80%);
-    bottom: 10%;
+    bottom: 3%;
     font-size: $font-size-small;
     left: 35%;
     position: absolute;
