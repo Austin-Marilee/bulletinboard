@@ -17,3 +17,43 @@ h3 {
   margin-bottom: 0;
   text-transform: uppercase;
 }
+
+.preamble h3,
+.explanation h3,
+.zen-resouces h3,
+.preamble,
+.explanation,
+.zen-resources {
+  color: $color-6;
+}
+
+h1,
+h2,
+.summary,
+.benefits,
+.requirements {
+  background-color: $color-6;
+}
+
+a {
+  &:link {
+    @include links(bold, none, $color-2);
+  }
+  &:visited {
+    @include links(bold, none, $color-6);
+  }
+  &:hover {
+    color: lighten($color-2, 40%);
+  }
+  &:active {
+    @include links(bold, none, $color-6);
+  }
+}
+
+abbr {
+  border-bottom: none;
+}
+
+li {
+  list-style-type: none;
+}

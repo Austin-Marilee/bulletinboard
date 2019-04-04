@@ -39,6 +39,7 @@ header h2 {
   color: $color-2;
   font-size: $font-size-medium;
   line-height: 1.2rem;
+  transform: translateY(16px);
   width: 135px;
   @include breakpoint(small) {
     left: 220px;
@@ -69,6 +70,7 @@ header h2 {
   .8em);
   width: 200px;
   z-index: 10;
+  transform: translateY(15px);
   & p {
     width: 175px;
     line-height: 1.3rem;

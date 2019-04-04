@@ -11,17 +11,18 @@
 //"Archives"links card--cream card with brown text at top right of screen
 .design-archives {
   @include box-shadow;
-  @include margin-padding(0 auto, 20px);
+  @include margin-padding(0 auto, 15px);
   @include pin;
   background-color: $color-3;
-  font-size: $font-size-medium;
+  font-size: $font-size-mid;
   font-family: $primary-font;
   font-weight: normal;
   position: absolute;
   left: 20px;
-  top: -15px;
   max-width: 200px;
+  top: -15px;
   transform: rotate(-5deg);
+  transition: 0.5s;
   & h3 {
     font-family: $primary-font;
     margin: 35px 0 0 0;
@@ -35,16 +36,15 @@
     line-height: 2.0rem;
   }
   &:hover {
-    animation: hover_flutter2 1s ease;
+    transform: scale(1.1);
   }
   @include breakpoint(small) {
     left: 70%;
     top: -75px;
     transform: rotate(0deg);
-    transform: scale(.9);
     font-weight: normal;
-    & h3 {
-      margin: 25px 0 0 0;
+    & li {
+      line-height: 1.6rem;
     }
   }
 }
@@ -56,19 +56,16 @@
 // 8 cream colored notes with dark brown text--one per site/creator (8 notes, one title card) 
 .design-selection {
   @include center(100%);
-
   & h3 {
     @include box-shadow;
     @include center(250px);
     @include pin;
     background-color: $color-3;
-    font-family: $cursive-font;
     font-size: $font-size-extra-large;
     padding: 55px 10px;
     text-transform: capitalize;
     text-align: center;
   }
-
   & li {
     @include box-shadow;
     @include center(70%);
@@ -80,26 +77,22 @@
     justify-content: center;
     text-align: center;
     transition: 0.5s;
-
     @include breakpoint(small) {
       & h3 {
         @include margin-padding(40px 10px 0 0, 10px);
         text-align: right;
       }
-
       @include center(175px);
       height: 125px;
       font-size: $font-size-medium;
       padding: 50px 20px;
     }
   }
-
   & ul {
     @include margin-padding(20px auto, 0);
     display: grid;
     max-width: 500px;
   }
-
   & li:nth-child(1) {
     @include pin;
     background-size: 35px;
@@ -107,7 +100,6 @@
     grid-row: 1 / 2;
     transform: rotate(-3deg);
   }
-
   & li:nth-child(2) {
     @include pin;
     background-size: 35px;
@@ -115,54 +107,44 @@
     grid-row: 1 / 2;
     transform: rotate(3deg);
   }
-
   & li:nth-child(3) {
     @include pin;
     background-size: 35px;
     transform: rotate(2deg);
   }
-
   & li:nth-child(4) {
     @include pin;
     background-size: 35px;
     transform: rotate(-5deg);
   }
-
   & li:nth-child(5) {
     @include pin;
     background-size: 35px;
     transform: rotate(3deg);
   }
-
   & li:nth-child(6) {
     @include pin;
     background-size: 35px;
   }
-
   & li:nth-child(7) {
     transform: rotate(-3deg);
     @include pin;
     background-size: 35px;
   }
-
   & li:nth-child(8) {
     @include pin;
     background-size: 35px;
     transform: rotate(2deg);
   }
-
   & li a:nth-child(2) {
     font-weight: normal;
   }
-
   & li:hover {
     transform: scale(1.2);
   }
-
   & li a:link {
     color: $color-2;
   }
-
   @include breakpoint(medium) {
     @include center(80%);
     bottom: 10%;
@@ -170,17 +152,16 @@
     left: 35%;
     position: absolute;
     transform: translateY(100px);
-
     p {
       font-size: $font-size-medium;
       line-height: 1.5rem;
     }
-
     ul {
       @include center(60%);
     }
   }
 }
+
 
 //"Resources" ribbon--Pink ribbon with white text and green floral image
 .zen-resources {
@@ -193,7 +174,7 @@
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
-  top: 0px;
+  top: 10px;
   transform: rotate(-5deg);
   &:before {
     border-right: 140px solid transparent;
