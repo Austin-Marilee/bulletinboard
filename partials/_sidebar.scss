@@ -70,29 +70,25 @@
     @include margin-padding(10px, 45px 15px 20px 15px);
     background-color: $color-3;
     display: flex;
-    font-size: 0.8rem;
+    font-size: $font-size-small;
     flex-flow: column nowrap;
+    height: 120px;
     justify-content: center;
+    width: 160px;
     text-align: center;
     transition: 0.5s;
 
-    @include breakpoint(small) {
-      & h3 {
-        @include margin-padding(40px 10px 0 0, 10px);
-        text-align: right;
-      }
-
-      @include center(175px);
-      height: 125px;
-      font-size: $font-size-medium;
-      padding: 50px 20px;
+    & a:first-child {
+      font-family: $cursive-font;
+      font-size: $font-size-large;
     }
   }
 
   & ul {
+    @include center(100%);
+    justify-content: center;
     @include margin-padding(20px auto, 0);
     display: grid;
-    max-width: 500px;
   }
 
   & li:nth-child(1) {
@@ -105,6 +101,7 @@
 
   & li:nth-child(2) {
     @include pin;
+    background-position-y: 10%;
     background-size: 35px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -113,24 +110,28 @@
 
   & li:nth-child(3) {
     @include pin;
+    background-position: 40% 10%;
     background-size: 35px;
     transform: rotate(2deg);
   }
 
   & li:nth-child(4) {
     @include pin;
+    background-position: 60% 10%;
     background-size: 35px;
     transform: rotate(-5deg);
   }
 
   & li:nth-child(5) {
     @include pin;
+    background-position: 50% 10%;
     background-size: 35px;
     transform: rotate(3deg);
   }
 
   & li:nth-child(6) {
     @include pin;
+    background-position: 40% 10%;
     background-size: 35px;
   }
 
@@ -142,6 +143,7 @@
 
   & li:nth-child(8) {
     @include pin;
+    background-position: 65% 5%;
     background-size: 35px;
     transform: rotate(2deg);
   }
@@ -158,21 +160,20 @@
     color: $color-2;
   }
 
+  & li a:hover {
+    color: $color-4;
+      }
+
   @include breakpoint(medium) {
-    @include center(80%);
     bottom: 10%;
     font-size: $font-size-small;
-    left: 35%;
+    left: 32%;
     position: absolute;
     transform: translateY(100px);
 
-    p {
+      p {
       font-size: $font-size-medium;
       line-height: 1.5rem;
-    }
-
-    ul {
-      @include center(60%);
     }
   }
 }
@@ -187,7 +188,7 @@
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
-  top: 0px;
+  top: 0;
   transform: rotate(-2deg);
 
   &:before {
@@ -223,7 +224,6 @@
 
   & h3 {
     color: $color-6;
-    font-family: $cursive-font;
     font-size: $font-size-extra-large;
     margin: 25px 0 5px 0;
     text-transform: capitalize;
@@ -245,6 +245,10 @@
 
   & ul {
     @include margin-padding(0, 0);
+  }
+
+  &:hover {
+    animation: hover_flutter2 1s ease;
   }
 
   @include breakpoint(small) {

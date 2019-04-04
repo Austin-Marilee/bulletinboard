@@ -16,7 +16,6 @@
 @import 'partials/keyframes';
 
 
-
 /* basic elements */
 html {
   @include margin-padding(0, 0);
@@ -100,17 +99,17 @@ li {
 /* specific divs */
 .page-wrapper {
   @include margin-padding(0 0, 0 40px 200px 40px);
+  background-image: url('images/burlap.jpg');
   border-top: 150px solid $color-2;
   position: relative;
 
   @include breakpoint(small) {
-    @include margin-padding(0 0, 0 40px);
+  @include margin-padding(0 0, 0 40px);
   }
 
   @include breakpoint(medium) {
-    background-image: url('images/burlap.jpg');
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 
@@ -127,7 +126,7 @@ li {
     position: absolute;
   }
 
-  div#zen-supporting {
+  div.supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

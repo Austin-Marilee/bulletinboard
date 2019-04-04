@@ -359,10 +359,10 @@ template {
 header h1 {
   background: transparent;
   height: 130px;
-  width: 155px;
   vertical-align: middle;
+  width: 155px;
   margin: -155px auto 40px auto;
-  padding: 80px 30px 0px 30px;
+  padding: 80px 30px 0 30px;
   background-image: url(images/logo_pink.png);
   background-repeat: no-repeat;
   background-size: 225px 225px;
@@ -417,21 +417,19 @@ header h2:hover {
 
 @media (min-width: 53.125em) {
   header h2 {
-    right: -395px;
+    right: -595px;
     top: 70px;
     z-index: 10;
   }
 }
 
-@media (min-width: 75.1em) {
+@media (min-width: 90em) {
   header h2 {
-    right: -380px;
+    right: -615px;
   }
 }
 
 .summary {
-  margin: 0 auto 20px auto;
-  padding: 0 25px 160px 25px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   background-image: url("images/flower-combo.png");
@@ -439,33 +437,35 @@ header h2:hover {
   background-size: 370px 370px;
   background-position: right -180px bottom -150px;
   font-size: 0.8em;
+  margin: 0 auto 20px auto;
+  padding: 0 25px 160px 25px;
   width: 200px;
 }
 
 .summary p {
-  width: 175px;
   line-height: 1.3rem;
+  width: 175px;
 }
 
 @media (min-width: 45em) {
   .summary {
-    position: absolute;
-    top: 260px;
     left: 440px;
+    position: absolute;
+    top: 280px;
   }
 }
 
 @media (min-width: 53.125em) {
   .summary {
-    top: 160px;
-    left: 560px;
+    left: 660px;
+    top: 180px;
     z-index: 10;
   }
 }
 
-@media (min-width: 75.1em) {
+@media (min-width: 90em) {
   .summary {
-    left: 552px;
+    left: 670px;
   }
 }
 
@@ -484,7 +484,6 @@ header h2:hover {
   background-size: 40px;
   background-color: #382519;
   color: #ffffff;
-  text-align: center;
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
 }
@@ -498,6 +497,7 @@ header h2:hover {
 
 .preamble.preamble h3 {
   font-size: 1.3rem;
+  padding-bottom: 15px;
 }
 
 .preamble.preamble p {
@@ -518,7 +518,7 @@ header h2:hover {
 
 @media (min-width: 53.125em) {
   .preamble {
-    margin: 110px 0 0 0;
+    margin: 120px 0 0 70px;
   }
 }
 
@@ -537,6 +537,7 @@ header h2:hover {
   background-size: 40px;
   background-color: #ec637d;
   font-size: 1rem;
+  max-height: 600px;
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
 }
@@ -549,8 +550,7 @@ header h2:hover {
 }
 
 .explanation h3 {
-  font-size: 1rem;
-  margin-top: 20px;
+  margin: 25px 0 5px 0;
   text-align: center;
 }
 
@@ -566,7 +566,7 @@ header h2:hover {
   }
 }
 
-@media (min-width: 75.1em) {
+@media (min-width: 90em) {
   .explanation {
     max-width: 350px;
     position: absolute;
@@ -587,7 +587,7 @@ header h2:hover {
   left: 30px;
   position: absolute;
   top: 20px;
-  width: 80%;
+  width: 100%;
   z-index: -1;
 }
 
@@ -604,7 +604,7 @@ header h2:hover {
   }
 }
 
-@media (min-width: 75.1em) {
+@media (min-width: 90em) {
   .participation::before {
     background-position: 80% 95%, 50% 3%;
   }
@@ -615,17 +615,17 @@ header h2:hover {
   margin-right: auto;
   max-width: 100%;
   width: 90%;
+  margin: 0 0 40px 0;
+  padding: 0 0 50px 0;
   background: url("images/envelope.png") no-repeat;
-  background-size: 500px;
-  margin-bottom: 30px;
-  padding-bottom: 50px;
+  background-size: 100%;
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
 }
 
 .participation h3 {
   margin: 40px 0 0 10px;
-  padding: 60px 0 0 40px;
+  padding: 70px 0 0 40px;
   font-family: "Great Vibes", cursive;
   font-size: 1.6rem;
   text-transform: capitalize;
@@ -635,18 +635,23 @@ header h2:hover {
   font-size: 1rem;
   line-height: 1.2rem;
   margin: 0;
-  padding: 5px 100px 5px 50px;
+  padding: 5px 0 5px 50px;
+}
+
+.participation:hover {
+  -webkit-animation: hover_flutter2 1s ease;
+          animation: hover_flutter2 1s ease;
 }
 
 @media (min-width: 45em) {
   .participation h3 {
-    margin: 60px 10px 0 0;
-    padding: 10px;
+    margin: 70px 0 0 0;
+    padding: 15px 0 15px 0;
     text-align: right;
   }
   .participation p {
-    margin: 0 0 0 20px;
-    padding: 5px 20px;
+    margin: 0;
+    padding: 0 0 20px 0;
     margin-left: 70px;
     text-align: right;
   }
@@ -662,9 +667,12 @@ header h2:hover {
   }
 }
 
-@media (min-width: 75.1em) {
+@media (min-width: 90em) {
   .participation {
     margin-top: 30px;
+  }
+  .participation p:last-of-type {
+    padding-bottom: 60px;
   }
 }
 
@@ -674,13 +682,12 @@ header h2:hover {
   max-width: 100%;
   width: 180px;
   margin: 0 0 20px 25px;
-  padding: 20px;
+  padding: 30px 20px 0 20px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
-  background-size: 196px, 40px;
+  background: url("images/barcode_horizontal.png") 50% 109% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  background-size: 350px, 40px;
   height: 445px;
-  padding-top: 35px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
 }
@@ -690,10 +697,10 @@ header h2:hover {
 }
 
 .benefits p {
-  border-bottom: 8px solid #f2b975;
   font-size: 1rem;
   line-height: 1.2rem;
-  padding: 5px 20px 1em 20px;
+  margin: 0;
+  padding: 15px 0 0 0;
 }
 
 .benefits:hover {
@@ -703,7 +710,7 @@ header h2:hover {
 
 @media (min-width: 35.9em) {
   .benefits {
-    margin: -24px 0px 7px 90px;
+    margin: -24px 0 7px 90px;
   }
 }
 
@@ -713,8 +720,8 @@ header h2:hover {
     margin-right: auto;
     max-width: 100%;
     width: 90%;
-    background: url("images/barcode.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
-    background-size: 130px, 40px;
+    background: url("images/barcode_vertical.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+    background-size: 110px, 40px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
@@ -729,12 +736,11 @@ header h2:hover {
   .benefits p {
     border-bottom: none;
     line-height: 1.2rem;
-    padding-right: 120px;
-    padding-top: 0;
+    padding: 5px 120px 25px 20px;
   }
 }
 
-@media (min-width: 75.1em) {
+@media (min-width: 90em) {
   .benefits {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -798,7 +804,7 @@ p[role=contentinfo] {
   bottom: -142px;
   color: #ffffff;
   font-size: 1.3rem;
-  left: 0px;
+  left: 0;
   max-width: 100%;
   padding: 3rem;
   padding-right: 15px;
@@ -932,42 +938,38 @@ p[role=contentinfo] a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.8rem;
+  font-size: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  height: 120px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 160px;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-@media (min-width: 45em) {
-  .design-selection li {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 175px;
-    width: 90%;
-    height: 125px;
-    font-size: 1.3rem;
-    padding: 50px 20px;
-  }
-  .design-selection li h3 {
-    margin: 40px 10px 0 0;
-    padding: 10px;
-    text-align: right;
-  }
+.design-selection li a:first-child {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.4rem;
 }
 
 .design-selection ul {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px auto;
   padding: 0;
   display: -ms-grid;
   display: grid;
-  max-width: 500px;
 }
 
 .design-selection li:nth-child(1) {
@@ -998,6 +1000,7 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-position-y: 10%;
   background-size: 35px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1021,6 +1024,7 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-position: 40% 10%;
   background-size: 35px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
@@ -1038,6 +1042,7 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-position: 60% 10%;
   background-size: 35px;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
@@ -1055,6 +1060,7 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-position: 50% 10%;
   background-size: 35px;
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
@@ -1072,6 +1078,7 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-position: 40% 10%;
   background-size: 35px;
 }
 
@@ -1104,6 +1111,7 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
+  background-position: 65% 5%;
   background-size: 35px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
@@ -1129,15 +1137,15 @@ p[role=contentinfo] a {
   color: #382519;
 }
 
+.design-selection li a:hover {
+  color: #ec637d;
+}
+
 @media (min-width: 53.125em) {
   .design-selection {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    width: 90%;
     bottom: 10%;
     font-size: 1rem;
-    left: 35%;
+    left: 32%;
     position: absolute;
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
@@ -1145,12 +1153,6 @@ p[role=contentinfo] a {
   .design-selection p {
     font-size: 1.3rem;
     line-height: 1.5rem;
-  }
-  .design-selection ul {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%;
-    width: 90%;
   }
 }
 
@@ -1164,7 +1166,7 @@ p[role=contentinfo] a {
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
-  top: 0px;
+  top: 0;
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
 }
@@ -1204,7 +1206,6 @@ p[role=contentinfo] a {
 
 .zen-resources h3 {
   color: #ffffff;
-  font-family: "Great Vibes", cursive;
   font-size: 1.6rem;
   margin: 25px 0 5px 0;
   text-transform: capitalize;
@@ -1227,6 +1228,11 @@ p[role=contentinfo] a {
 .zen-resources ul {
   margin: 0;
   padding: 0;
+}
+
+.zen-resources:hover {
+  -webkit-animation: hover_flutter2 1s ease;
+          animation: hover_flutter2 1s ease;
 }
 
 @media (min-width: 45em) {
@@ -1254,7 +1260,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 0px;
+  left: 0;
   padding: 30px 0;
   position: absolute;
   width: 100%;
@@ -1549,6 +1555,7 @@ li {
 .page-wrapper {
   margin: 0 0;
   padding: 0 40px 200px 40px;
+  background-image: url("images/burlap.jpg");
   border-top: 150px solid #382519;
   position: relative;
 }
@@ -1562,9 +1569,8 @@ li {
 
 @media (min-width: 53.125em) {
   .page-wrapper {
-    background-image: url("images/burlap.jpg");
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 
@@ -1580,7 +1586,7 @@ li {
     left: 220px;
     position: absolute;
   }
-  div#zen-supporting {
+  div.supporting {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;

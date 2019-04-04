@@ -4,9 +4,9 @@
 header h1 {
   background: transparent;
   height: 130px;
-  width: 155px;
   vertical-align: middle;
-  @include margin-padding(-155px auto 40px auto, 80px 30px 0px 30px);
+  width: 155px;
+  @include margin-padding(-155px auto 40px auto, 80px 30px 0 30px);
   @include background-img (url(images/logo_pink.png),
   no-repeat,
   225px,
@@ -46,19 +46,18 @@ header h2 {
   }
 
   @include breakpoint(medium) {
-    right: -395px;
+    right: -595px;
     top: 70px;
     z-index: 10;
   }
 
   @include breakpoint(large) {
-    right: -380px;
+    right: -615px;
   }
 }
 
 //"Beauty of CSS" card--white card with flower image (Title=header h2)
 .summary {
-  @include margin-padding(0 auto 20px auto, 0 25px 160px 25px);
   @include box-shadow;
   @include background-img (url('images/flower-combo.png'),
   no-repeat,
@@ -67,28 +66,29 @@ header h2 {
   right -180px,
   bottom -150px,
   .8em);
+  @include margin-padding(0 auto 20px auto, 0 25px 160px 25px);
 
   width: 200px;
 
   & p {
-    width: 175px;
     line-height: 1.3rem;
+    width: 175px;
   }
 
   @include breakpoint(small) {
-    position: absolute;
-    top: 260px;
     left: 440px;
+    position: absolute;
+    top: 280px;
   }
 
   @include breakpoint(medium) {
-    top: 160px;
-    left: 560px;
+    left: 660px;
+    top: 180px;
     z-index: 10;
   }
 
   @include breakpoint(large) {
-    left: 552px;
+    left: 670px;
   }
 }
 
@@ -100,11 +100,11 @@ header h2 {
   @include pin;
   background-color: $color-2;
   color: $color-6;
-  text-align: center;
   transform: rotate(-1deg);
 
   &.preamble h3 {
     font-size: $font-size-medium;
+    padding-bottom: 15px;
   }
   &.preamble p {
     font-size: $font-size-small;
@@ -116,6 +116,6 @@ header h2 {
     transform: rotate(-4deg);
   }
   @include breakpoint(medium) {
-    margin: 110px 0 0 0;
+    margin: 120px 0 0 70px;
   }
 }

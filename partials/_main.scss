@@ -8,11 +8,11 @@
   @include pin;
   background-color: $color-4;
   font-size: $font-size-small;
+  max-height: 600px;
   transform: rotate(1deg);
 
   & h3 {
-    font-size: $font-size-small;
-    margin-top: 20px;
+    margin: 25px 0 5px 0;
     text-align: center;
   }
 
@@ -34,6 +34,7 @@
   }
 }
 
+
 //"Participation"card --cream card with brown text and red floral
 
 /*Cream, red-leaves and pin backgrounds*/
@@ -47,7 +48,7 @@
   left: 30px;
   position: absolute;
   top: 20px;
-  width: 80%;
+  width: 100%;
   z-index: -1;
 
   @include breakpoint(small) {
@@ -67,14 +68,13 @@
 
 .participation {
   @include center(100%);
+  @include margin-padding(0 0 40px 0, 0 0 50px 0);
   background: url('images/envelope.png') no-repeat;
-  background-size: 500px;
-  margin-bottom: 30px;
-  padding-bottom: 50px;
+  background-size: 100%;
   transform: rotate(-2deg);
 
   & h3 {
-    @include margin-padding(40px 0 0 10px, 60px 0 0 40px);
+    @include margin-padding(40px 0 0 10px, 70px 0 0 40px);
     font-family: $cursive-font;
     font-size: $font-size-extra-large;
     text-transform: capitalize;
@@ -83,17 +83,22 @@
   & p {
     font-size: $font-size-small;
     line-height: 1.2rem;
-    @include margin-padding(0, 5px 100px 5px 50px);
+    @include margin-padding(0, 5px 0 5px 50px);
   }
+
+  &:hover {
+    animation: hover_flutter2 1s ease;
+  }
+
 
   @include breakpoint(small) {
     & h3 {
-      @include margin-padding(60px 10px 0 0, 10px);
+      @include margin-padding(70px 0 0 0, 15px 0 15px 0);
       text-align: right;
     }
 
     & p {
-      @include margin-padding(0 0 0 20px, 5px 20px);
+      @include margin-padding(0, 0 0 20px 0);
       margin-left: 70px;
       text-align: right;
     }
@@ -110,18 +115,20 @@
 
   @include breakpoint(large) {
     margin-top: 30px;
+    & p:last-of-type {
+      padding-bottom: 60px;
+    }
   }
 }
 
 //"Benefits"ticket--white ticket with barcode and gold line  
 .benefits {
   @include center(100%, 180px);
-  @include margin-padding(0 0 20px 25px, 20px);
+  @include margin-padding(0 0 20px 25px, 30px 20px 0 20px);
   @include box-shadow;
-  background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
-  background-size: 196px, 40px;
+  background: url('images/barcode_horizontal.png') 50% 109% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background-size: 350px, 40px;
   height: 445px;
-  padding-top: 35px;
   transform: rotate(2deg);
 
   & h3 {
@@ -129,10 +136,9 @@
   }
 
   & p {
-    border-bottom: 8px solid $color-7;
     font-size: $font-size-small;
     line-height: 1.2rem;
-    padding: 5px 20px 1em 20px;
+    @include margin-padding(0, 15px 0 0 0);
   }
 
   &:hover {
@@ -140,13 +146,13 @@
   }
 
   @include breakpoint(xsmall) {
-    margin: -24px 0px 7px 90px;
+    margin: -24px 0 7px 90px;
   }
 
   @include breakpoint(small) {
     @include center(100%);
-    background: url('images/barcode.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
-    background-size: 130px, 40px;
+    background: url('images/barcode_vertical.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+    background-size: 110px, 40px;
     grid-column: 1 / span 2;
     height: auto;
     margin: 10px auto;
@@ -160,8 +166,7 @@
     & p {
       border-bottom: none;
       line-height: 1.2rem;
-      padding-right: 120px;
-      padding-top: 0;
+      padding: 5px 120px 25px 20px;
     }
   }
 
@@ -217,7 +222,7 @@ p[role=contentinfo] {
   bottom: -142px;
   color: #ffffff;
   font-size: $font-size-medium;
-  left: 0px;
+  left: 0;
   max-width: 100%;
   padding: 3rem;
   padding-right: 15px;
