@@ -50,3 +50,11 @@ a {
     @include links(bold, none, $color-6);
   }
 }
+
+abbr {
+  border-bottom: none;
+}
+
+li {
+  list-style-type: none;
+}

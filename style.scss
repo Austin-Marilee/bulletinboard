@@ -15,6 +15,7 @@
 @import 'partials/sidebar';
 @import 'partials/footer';
 @import 'partials/keyframes';
+@import 'partials/typography';
 
 /* basic elements */
 html {
@@ -36,26 +37,16 @@ p {
   margin-top: 0;
 }
 
-abbr {
-  border-bottom: none;
-}
-
-li {
-  list-style-type: none;
-}
-
 /* specific divs */
 .page-wrapper {
   @include margin-padding(0 0, 0 40px 200px 40px);
   border-top: 150px solid $color-2;
   position: relative;
-
   @include breakpoint(small) {
+    background-image: url('images/burlap.jpg');
     @include margin-padding(0 0, 0 40px);
   }
-
   @include breakpoint(medium) {
-    background-image: url('images/burlap.jpg');
     margin: auto;
     max-width: 1200px;
   }
