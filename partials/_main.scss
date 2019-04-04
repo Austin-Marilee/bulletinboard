@@ -168,6 +168,7 @@
   }
   @include breakpoint(medium) {
     grid-column: 1 / 2;
+    margin: 60px auto 20px auto;
   }
 }
 
