@@ -33,47 +33,62 @@
 /*Cream, red-leaves and pin backgrounds*/
 .participation {
   background-color: $color-5;
-  @include box-shadow;
   border: 30px solid $color-5;
-  margin: 30px auto 15px auto;
+  @include box-shadow;
+  margin: 30px 0 15px -30px;
   transform: rotate(0deg);
   width: 100%;
   z-index: 50;
   & h3 {
-    @include margin-padding(40px 0 0 10px, 10px);
+    @include margin-padding(40px 0 0 -5px, 10px);
     font-size: $font-size-medium;
     transform: rotate(-3deg);
   }
   & p {
     font-size: $font-size-small;
     line-height: 1.2rem;
-    @include margin-padding(0, 5px 20px 25px 20px);
+    @include margin-padding(0, 5px 25px 25px 20px);
     transform: rotate(-3deg);
+  }
+  & p:nth-of-type(1) {
+    margin-left: -10px;
+  }
+  & p:nth-of-type(3) {
+    margin-left: 10px;
   }
   @include breakpoint(small) {
     margin-left: 15px;
     padding: 0 10px 20px 40px;
+    width: 70%;
     & h3 {
-      @include margin-padding(40px 10px 0 0, 10px);
-      text-align: right;
+      @include margin-padding(40px 0 0 -40px, 10px);
     }
     & p {
       line-height: 1.4rem;
-      @include margin-padding(0 0 20px 30px, 5px 20px);
-      text-align: right;
+      width: 95%;
+    }
+    & p:nth-of-type(1) {
+      @include margin-padding(0 0 10px -25px, 5px 20px 0 0); 
+    }
+    & p:nth-of-type(2) {
+      @include margin-padding(0 0 10px -15px, 5px 20px 0 0);
+    }
+    & p:nth-of-type(3) {
+      @include margin-padding(0 0 10px -5px, 5px 20px 0 0);
     }
   }
   @include breakpoint(medium) {
     padding: 0 10px 10px 50px;
+    text-align: right;
     transform: rotate(-3deg);
     & h3 {
-      margin: 30px 10px 0 0;
+      margin: 30px 40px 0 0;
     }
   }
   @include breakpoint(large) {
-    padding: 0 40px 10px 60px;
+    padding: 0 20px 20px 100px;
     position: absolute;
-    margin: 40px 0 20px 15px;
+    margin: 60px 0 20px 0;
     width: 40%;
   }
   &::before {
@@ -141,6 +156,8 @@
     margin: 160px 0 200px 20px;
     max-height: 200px;
     max-width: 700px;
+    position: relative;
+    right: -20px;
   }
 }
 
@@ -172,6 +189,9 @@
   }
   @include breakpoint(medium) {
     grid-column: 1 / 2;
+  }
+  @include breakpoint(large) {
+    margin: 60px auto 20px auto;
   }
 }
 
