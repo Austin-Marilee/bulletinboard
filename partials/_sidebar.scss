@@ -14,7 +14,6 @@
   font-size: $font-size-small;
   @include margin-padding(0 auto, 15px);
   @include pin;
-
   top: -20px;
   left: 25px;
   max-width: 200px;
@@ -66,7 +65,7 @@
 // 8 cream colored notes with dark brown text--one per site/creator (8 notes, one title card) 
 .design-selection {
   @include center(100%);
-
+  z-index: 20;
   & h3 {
     //moved from top down to be by links so more intuitive
     padding: 45px 10px;

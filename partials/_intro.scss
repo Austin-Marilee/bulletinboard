@@ -76,7 +76,7 @@ header h2 {
   @include breakpoint(medium) {
     top: 160px;
     left: 590px;
-    z-index: 10;
+    z-index: 70;
   }
   @include breakpoint(large) {
     left: 533px;

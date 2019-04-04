@@ -116,7 +116,7 @@ header h2:hover {
   .summary {
     top: 160px;
     left: 590px;
-    z-index: 10;
+    z-index: 70;
   }
 }
 
@@ -196,6 +196,7 @@ header h2:hover {
   font-size: 1rem;
   margin: 0 0 20px 0;
   padding: 30px;
+  z-index: 20;
 }
 
 .explanation:hover {
@@ -278,6 +279,7 @@ header h2:hover {
   padding-bottom: 50px;
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
+  z-index: 50;
 }
 
 .participation h3 {
@@ -338,6 +340,7 @@ header h2:hover {
   padding-top: 35px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
+  z-index: 100;
 }
 
 .benefits h3 {
@@ -569,6 +572,7 @@ p[role=contentinfo] a {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  z-index: 20;
 }
 
 .design-selection h3 {
