@@ -165,14 +165,17 @@
   @include margin-padding(0 0 0 -10px, 30px 20px 30px 60px);
   width: 85%;
   & h3 {
+    border-bottom: 15px solid $color-2;
     margin-bottom: 10px;
+    padding-bottom: 15px;
     text-transform: uppercase;
+    width: 95%;
   }
   & p {
     font-size: $font-size-small;
+    width: 90%;
   }
   & p:nth-of-type(1) {
-    border-top: 15px solid $color-2;
     padding-top: 15px;
   }
   & role {
