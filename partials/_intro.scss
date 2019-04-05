@@ -10,16 +10,11 @@ header h1 {
   center,
   center,
   0);
-  @include margin-padding(-155px auto 40px auto, 80px 30px 0px 30px);
   height: 130px;
+  @include margin-padding(-155px auto 40px auto, 80px 30px 0 30px);
   vertical-align: middle;
   width: 155px;
-
   @include breakpoint(small) {
-    height: 230px;
-    margin-top: -180px;
-    transform: translateX(-100px);
-    width: 255px;
     @include background-img (url(images/logo_blue.png),
     no-repeat,
     300px,
@@ -27,18 +22,22 @@ header h1 {
     center,
     center,
     0);
+    height: 230px;
+    margin-top: -180px;
+    transform: translateX(-100px);
+    width: 255px;
   }
 }
 
 //title (h2) for .summary/Beauty of CSS card
 header h2 {
-  @include box-shadow;
-  @include margin-padding(auto, 50px 90px 5px 25px);
   @include pin;
   background-color: $color-6;
+  @include box-shadow;
   color: $color-2;
   font-size: $font-size-medium;
   line-height: 1.2rem;
+  @include margin-padding(auto, 50px 90px 5px 25px);
   transform: translateY(16px);
   width: 135px;
   z-index: 70;
@@ -59,8 +58,6 @@ header h2 {
 
 //"Beauty of CSS" card--white card with flower image (Title=header h2)
 .summary {
-  @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
-  @include box-shadow;
   @include background-img (url('images/flower-combo.png'),
   no-repeat,
   370px,
@@ -69,23 +66,25 @@ header h2 {
   bottom -150px,
   .8em);
   background-color: $color-6;
+  @include box-shadow;
+  @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
+  transform: translateY(15px);
   width: 200px;
   z-index: 70;
-  transform: translateY(15px);
   & p {
-    width: 175px;
     line-height: 1.3rem;
+    width: 175px;
   }
   @include breakpoint(small) {
+    left: 440px;
     position: absolute;
     top: 230px;
-    left: 440px;
   }
   @include breakpoint(medium) {
-    top: 205px;
     left: 560px;
+    top: 205px;
     z-index: 70;
-  }
+  } 
   @include breakpoint(large) {
     left: 553px;
     top: 145px;
@@ -94,28 +93,27 @@ header h2 {
 
 //"The Road to Enlightenment card" --dark brown card with white text
 .preamble {
-  @include box-shadow;
-  @include center(85%);
-  @include margin-padding(20px 0 15px 0, 30px);
   @include pin;
   background-color: $color-2;
+  @include box-shadow;
   color: $color-6;
+  @include margin-padding(20px 0 15px 0, 30px);
   text-align: center;
   transform: rotate(-1deg);
+  width: 85%;
   &.preamble h3 {
     font-size: $font-size-medium;
   }
   &.preamble p {
     font-size: $font-size-small;
   }
-
   @include breakpoint(small) {
-    @include center (75%);
-    margin-top: 140px;
+    margin: 140px auto 15px auto;
     transform: rotate(-4deg);
+    width: 75%
   }
   @include breakpoint(medium) {
-    @include center (70%);
     margin: 140px 0 0 0;
+    width: 70%;
   }
 }

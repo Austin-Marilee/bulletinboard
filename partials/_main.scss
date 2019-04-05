@@ -2,10 +2,10 @@
 
 //"So What Is This About?"card--pink card with white text
 .explanation {
-  @include box-shadow;
-  @include center(80%);
   @include pin;
   background-color: $color-4;
+  @include box-shadow;
+  @include center(80%);
   font-size: $font-size-small;
   @include margin-padding(0 0 20px 0, 30px);
   transform: rotate(1deg);
@@ -19,11 +19,11 @@
     transform: translateY(30px);
   }
   @include breakpoint(large) {
-    transform: rotate(3deg);
     max-width: 350px;
     position: absolute;
     right: 30px;
     top: 130px;
+    transform: rotate(3deg);
   }
 }
 
@@ -39,8 +39,8 @@
   width: 100%;
   z-index: 50;
   & h3 {
-    @include margin-padding(40px 0 0 -5px, 10px);
     font-size: $font-size-medium;
+    @include margin-padding(40px 0 0 -5px, 10px);
     transform: rotate(-3deg);
   }
   & p {
@@ -96,8 +96,8 @@
     @include box-shadow;
     content: '';
     height: 100%;
-    position: absolute;
     left: -5px;
+    position: absolute;
     transform: rotate(-3deg);
     width: 100%;
     z-index: -1;
@@ -205,6 +205,43 @@
   }
 }
 
+//"Requirements"paper--white paper with brown text and checkmark 
+.requirements {
+  background: url('images/check.png') 0% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background-size: 80px, 40px;
+  @include box-shadow;
+  @include margin-padding(0 0 0 -10px, 30px 20px 30px 60px);
+  width: 85%;
+  & h3 {
+    border-bottom: 15px solid $color-2;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    width: 95%;
+  }
+  & p {
+    font-size: $font-size-small;
+    width: 90%;
+  }
+  & p:nth-of-type(1) {
+    padding-top: 15px;
+  }
+  & role {
+    background-color: $color-2;
+  }
+  @include breakpoint(small) {
+    grid-column: 1 / span 2;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  @include breakpoint(medium) {
+    grid-column: 1 / 2;
+  }
+  @include breakpoint(large) {
+    margin: 60px auto 20px auto;
+  }
+}
+
 //bottom dark brown band with website/author information in white text 
 p[role=contentinfo] {
   background-color: #382519;
@@ -222,9 +259,9 @@ p[role=contentinfo] {
     font-weight: normal
   }
   @include breakpoint(small) {
+    font-size: $font-size-medium;
     padding: 60px 5% 90px 55%;
     text-align: right;
-    font-size: $font-size-medium;
   }
   @include breakpoint(medium) {
     bottom: -160px;
