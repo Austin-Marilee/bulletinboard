@@ -252,13 +252,16 @@
     @include margin-padding(0, 0);
   }
   @include breakpoint(small) {
-    left: 50px;
+    left: -108px;
     margin: 20 0 0 0;
     top: 15px;
   }
   @include breakpoint(medium) {
-    left: 100px;
-    margin-top: -50px;
+    left: -270px;
+    margin-top: -70px;
     z-index: 1;
+  }
+  @include breakpoint(large) {
+    left: -365px; 
   }
 }
