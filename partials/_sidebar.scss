@@ -176,7 +176,6 @@
   }
 }
 
-
 //"Resources" ribbon--Pink ribbon with white text and green floral image
 .zen-resources {
   @include box-shadow;
@@ -184,7 +183,7 @@
   background-color: $color-4;
   background-size: 150px, 40px;
   font-family: $primary-font;
-  margin: auto;
+  margin: 30px auto 0;
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;

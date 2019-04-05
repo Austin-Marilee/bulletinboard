@@ -1301,7 +1301,7 @@ p[role=contentinfo] a {
   background-color: #ec637d;
   background-size: 150px, 40px;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  margin: auto;
+  margin: 30px auto 0;
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
