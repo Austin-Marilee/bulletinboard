@@ -207,10 +207,10 @@
 .zen-resources {
   -ms-transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
+  @include box-shadow;
   background: url('images/blue-leaves.png') 85% 120% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-color: $color-4;
   background-size: 150px, 40px;
-  @include box-shadow;
   font-family: $primary-font;
   margin: 30px auto 0;
   max-width: 200px;
@@ -266,16 +266,14 @@
     @include margin-padding(0, 0);
   }
   @include breakpoint(small) {
-    left: -108px;
-    margin: 20 0 0 0;
+    left: 50px;
+    margin: 0;
     top: 15px;
+
   }
   @include breakpoint(medium) {
-    left: -270px;
-    margin-top: -70px;
+    left: 100px;
+    margin-top: -50px;
     z-index: 1;
-  }
-  @include breakpoint(large) {
-    left: -365px; 
   }
 }

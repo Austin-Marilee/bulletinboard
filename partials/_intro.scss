@@ -28,10 +28,6 @@ header h1 {
     center,
     center,
     0);
-    height: 230px;
-    margin-top: -180px;
-    transform: translateX(-100px);
-    width: 255px;
   }
 }
 
@@ -48,7 +44,6 @@ header h2 {
   @include margin-padding(auto, 50px 90px 5px 25px);
   transform: translateY(16px);
   width: 135px;
-  z-index: 70;
   @include breakpoint(small) {
     left: 220px;
     position: absolute;
@@ -57,6 +52,7 @@ header h2 {
   @include breakpoint(medium) {
     right: -395px;
     top: 115px;
+    z-index: 10;
   }
   @include breakpoint(large) {
     right: -380px;
@@ -95,7 +91,7 @@ header h2 {
     left: 560px;
     top: 205px;
     z-index: 70;
-  } 
+  }
   @include breakpoint(large) {
     left: 553px;
     top: 145px;
@@ -120,13 +116,13 @@ header h2 {
   &.preamble p {
     font-size: $font-size-small;
   }
+
   @include breakpoint(small) {
     -ms-transform: rotate(-4deg);
     -webkit-transform: rotate(-4deg);
     @include center (75%);
     margin-top: 140px;
     transform: rotate(-4deg);
-    width: 75%
   }
   @include breakpoint(medium) {
     margin: 140px 0 0 0;
