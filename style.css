@@ -52,9 +52,6 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
@@ -236,9 +233,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
   color: inherit;
   /* 2 */
   display: table;
@@ -271,9 +265,6 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
   padding: 0;
   /* 2 */
 }
@@ -840,7 +831,7 @@ header h2:hover {
 }
 
 .requirements {
-  background: url("images/check.png") 0% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
+  background: url("images/check.png") 0 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-size: 80px, 40px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -1725,7 +1716,7 @@ p {
     left: 220px;
     position: absolute;
   }
-  #zen-supporting {
+  .main.supporting {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
