@@ -40,7 +40,9 @@ header h2 {
   font-size: $font-size-medium;
   line-height: 1.2rem;
   transform: translateY(16px);
+  position: relative;
   width: 135px;
+  z-index: 70;
   @include breakpoint(small) {
     left: 220px;
     position: absolute;
@@ -49,7 +51,7 @@ header h2 {
   @include breakpoint(medium) {
     right: -395px;
     top: 115px;
-    z-index: 10;
+    z-index: 70;
   }
   @include breakpoint(large) {
     right: -380px;
@@ -69,8 +71,9 @@ header h2 {
   bottom -150px,
   .8em);
   background-color: $color-6;
+  position: relative;
   width: 200px;
-  z-index: 10;
+  z-index: 70;
   transform: translateY(15px);
   & p {
     width: 175px;
