@@ -8,9 +8,7 @@
   background-color: $color-4;
   font-size: $font-size-small;
   @include margin-padding(0 0 20px 0, 30px);
-  position: relative;
   transform: rotate(1deg);
-  z-index: 20;
   & h3 {
     font-size: $font-size-medium;
     margin-top: 20px;
