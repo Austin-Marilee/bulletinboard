@@ -617,8 +617,10 @@ header h2:hover {
   font-size: 1rem;
   margin: 0 0 20px 0;
   padding: 30px;
+
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
+       
 }
 
 .explanation:hover {
@@ -637,8 +639,11 @@ header h2:hover {
 @media (min-width: 53.125em) {
   .explanation {
     max-width: 80%;
+
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
+
+
   }
 }
 
@@ -776,6 +781,7 @@ header h2:hover {
   position: relative;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
+
   z-index: 100;
 }
 
@@ -843,8 +849,10 @@ header h2:hover {
     max-width: 700px;
     position: relative;
     right: -20px;
+
     -webkit-transform: rotate(2deg) translateY(0px);
             transform: rotate(2deg) translateY(0px);
+
   }
 }
 
