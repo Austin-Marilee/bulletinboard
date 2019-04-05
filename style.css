@@ -446,7 +446,7 @@ header h1 {
     height: 230px;
     margin-top: -180px;
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
     width: 255px;
     background-image: url(images/logo_blue.png);
     background-repeat: no-repeat;
@@ -470,7 +470,7 @@ header h2 {
   margin: auto;
   padding: 50px 90px 5px 25px;
   -webkit-transform: translateY(16px);
-          transform: translateY(16px);
+  transform: translateY(16px);
   width: 135px;
 }
 
@@ -517,7 +517,7 @@ header h2:hover {
   margin: 0 auto 40px auto;
   padding: 0 25px 160px 25px;
   -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
   width: 200px;
   z-index: 10;
 }
@@ -563,7 +563,7 @@ header h2:hover {
   padding: 30px;
   text-align: center;
   -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg);
+  transform: rotate(-1deg);
   width: 85%;
 }
 
@@ -590,7 +590,7 @@ header h2:hover {
     width: 90%;
     margin-top: 140px;
     -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
+    transform: rotate(-4deg);
   }
 }
 
@@ -741,7 +741,7 @@ header h2:hover {
 }
 
 .participation::before {
-  background: url("images/pin.svg") 50% 0% no-repeat, #efd9bf;
+  background: url("images/pin.svg") 50% 0 no-repeat, #efd9bf;
   background-size: 40px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -757,7 +757,7 @@ header h2:hover {
 
 @media (min-width: 75.1em) {
   .participation::before {
-    background: url("images/red-leaves.png") -5% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #efd9bf;
+    background: url("images/red-leaves.png") -5% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #efd9bf;
     background-size: 150px, 35px;
   }
 }
@@ -765,7 +765,7 @@ header h2:hover {
 .benefits {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
   margin: 30px auto 30px;
@@ -797,7 +797,7 @@ header h2:hover {
 
 @media (min-width: 35.9em) {
   .benefits {
-    background: url("images/barcode.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+    background: url("images/barcode.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
     background-size: 130px, 40px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -842,7 +842,7 @@ header h2:hover {
 }
 
 .requirements {
-  background: url("images/check.png") 0% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  background: url("images/check.png") 0% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-size: 80px, 40px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -898,7 +898,7 @@ p[role=contentinfo] {
   bottom: -142px;
   color: #ffffff;
   font-size: 1.4rem;
-  left: 0px;
+  left: 0;
   max-width: 100%;
   padding: 3rem;
   position: absolute;
@@ -1056,7 +1056,7 @@ p[role=contentinfo] a {
   padding: 0;
   max-width: 500px;
   -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
+  transform: translateX(-20px);
 }
 
 .design-selection li {
@@ -1299,7 +1299,7 @@ p[role=contentinfo] a {
 .zen-resources {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background: url("images/blue-leaves.png") 85% 120% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  background: url("images/blue-leaves.png") 85% 120% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-color: #ec637d;
   background-size: 150px, 40px;
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -1395,7 +1395,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 0px;
+  left: 0;
   padding: 30px 0;
   position: absolute;
   width: 100%;
@@ -1472,7 +1472,7 @@ a.zen-license:hover,
 a.zen-github:hover,
 a.zen-accessibility:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /*keyframes*/

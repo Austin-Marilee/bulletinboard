@@ -99,7 +99,7 @@
     width: 40%;
   }
   &::before {
-    background: url('images/pin.svg') 50% 0% no-repeat, $color-3;
+    background: url('images/pin.svg') 50% 0 no-repeat, $color-3;
     background-size: 40px;
     @include box-shadow;
     content: '';
@@ -111,7 +111,7 @@
     width: 100%;
     z-index: -1;
     @include breakpoint(large) {
-      background: url('images/red-leaves.png') -5% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, $color-3;
+      background: url('images/red-leaves.png') -5% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, $color-3;
       background-size: 150px, 35px;
     }
   }
@@ -120,7 +120,7 @@
 //"Benefits"ticket--white ticket with barcode and gold line  
 .benefits {
   @include box-shadow;
-  background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
   @include margin-padding(30px auto 30px, 35px 20px 20px 20px);
@@ -144,7 +144,7 @@
     animation: hover_flutter 1s ease;
   }
   @include breakpoint(xsmall) {
-    background: url('images/barcode.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+    background: url('images/barcode.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
     background-size: 130px, 40px;
     grid-column: 1 / span 2;
     height: auto;
@@ -180,7 +180,7 @@
 
 //"Requirements"paper--white paper with brown text and checkmark 
 .requirements {
-  background: url('images/check.png') 0% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background: url('images/check.png') 0% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-size: 80px, 40px;
   @include box-shadow;
   @include margin-padding(0 0 0 -10px, 30px 20px 30px 60px);
@@ -218,7 +218,7 @@ p[role=contentinfo] {
   bottom: -142px;
   color: #ffffff;
   font-size: $font-size-large;
-  left: 0px;
+  left: 0;
   max-width: 100%;
   padding: 3rem;
   position: absolute;
