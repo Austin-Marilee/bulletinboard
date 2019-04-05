@@ -2,10 +2,6 @@
 
 csslint: There are 203 problems in C:\Users\hansb\Documents\BYU-I\CIT261\Github\bulletinboard\style.css.
 
-style.css
-1: warning at line 14, col 1
-@import prevents parallel downloads, use <link> instead.
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 style.css
 2: warning at line 15, col 1
@@ -38,84 +34,15 @@ Unqualified attribute selectors are known to be slow.
 [type="submit"] {
 
 style.css
-8: warning at line 211, col 1
-Unqualified attribute selectors are known to be slow.
-[type="button"]::-moz-focus-inner,
-
-style.css
-9: warning at line 212, col 1
-Unqualified attribute selectors are known to be slow.
-[type="reset"]::-moz-focus-inner,
-
-style.css
-10: warning at line 213, col 1
-Unqualified attribute selectors are known to be slow.
-[type="submit"]::-moz-focus-inner {
-
-style.css
-11: warning at line 222, col 1
-Unqualified attribute selectors are known to be slow.
-[type="button"]:-moz-focusring,
-
-style.css
-12: warning at line 223, col 1
-Unqualified attribute selectors are known to be slow.
-[type="reset"]:-moz-focusring,
-
-style.css
-13: warning at line 224, col 1
-Unqualified attribute selectors are known to be slow.
-[type="submit"]:-moz-focusring {
-
-style.css
 14: warning at line 243, col 11
 The box-sizing property isn't supported in IE6 and IE7.
           box-sizing: border-box;
-
-style.css
-15: warning at line 275, col 1
-Unqualified attribute selectors are known to be slow.
-[type="checkbox"],
-
-style.css
-16: warning at line 276, col 1
-Unqualified attribute selectors are known to be slow.
-[type="radio"] {
 
 style.css
 17: warning at line 278, col 11
 The box-sizing property isn't supported in IE6 and IE7.
           box-sizing: border-box;
 
-style.css
-18: warning at line 287, col 1
-Unqualified attribute selectors are known to be slow.
-[type="number"]::-webkit-inner-spin-button,
-
-style.css
-19: warning at line 288, col 1
-Unqualified attribute selectors are known to be slow.
-[type="number"]::-webkit-outer-spin-button {
-
-style.css
-20: warning at line 296, col 1
-Unqualified attribute selectors are known to be slow.
-[type="search"] {
-
-style.css
-21: warning at line 298, col 3
-Expected (none | button | button-bevel | caps-lock-indicator | caret | checkbox | default-button | listbox	| listitem | media-fullscreen-button | media-mute-button | media-play-button | media-seek-back-button	| media-seek-forward-button	| media-slider | media-sliderthumb | menulist	| menulist-button	| menulist-text	| menulist-textfield | push-button	| radio	| searchfield	| searchfield-cancel-button	| searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical	| square-button	| textarea	| textfield	| scrollbarbutton-down | scrollbarbutton-left | scrollbarbutton-right | scrollbarbutton-up | scrollbargripper-horizontal | scrollbargripper-vertical | scrollbarthumb-horizontal | scrollbarthumb-vertical | scrollbartrack-horizontal | scrollbartrack-vertical) but found 'textfield'.
-  -webkit-appearance: textfield;
-
-style.css
-22: warning at line 307, col 1
-Unqualified attribute selectors are known to be slow.
-[type="search"]::-webkit-search-decoration {
-
-style.css
-23: warning at line 352, col 1
-Unqualified attribute selectors are known to be slow.
-[hidden] {
 
 style.css
 24: warning at line 363, col 1
@@ -323,11 +250,6 @@ Using width with padding can sometimes make elements larger than you expect.
   padding: 30px;
 
 style.css
-67: warning at line 621, col 3
-The property -ms-transform is compatible with -webkit-transform and should be included as well.
-  -webkit-transform: rotate(1deg);
-
-style.css
 68: warning at line 633, col 14
 Heading (h3) should not be qualified.
 .explanation h3 {
@@ -336,11 +258,6 @@ style.css
 69: warning at line 633, col 14
 Heading (h3) has already been defined.
 .explanation h3 {
-
-style.css
-70: warning at line 642, col 5
-The property -ms-transform is compatible with -webkit-transform and should be included as well.
-    -webkit-transform: translateY(30px);
 
 style.css
 71: warning at line 653, col 5
