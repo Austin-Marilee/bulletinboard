@@ -2,8 +2,10 @@
 
 //"So What Is This About?"card--pink card with white text
 .explanation {
-  @include pin;
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
   background-color: $color-4;
+  @include pin;
   @include box-shadow;
   @include center(80%);
   font-size: $font-size-small;
@@ -16,9 +18,12 @@
   }
   @include breakpoint (medium) {
     max-width: 80%;
+    -ms-transform: translateY(30px);
     transform: translateY(30px);
   }
   @include breakpoint(large) {
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
     max-width: 350px;
     position: absolute;
     right: 30px;
@@ -35,10 +40,13 @@
   border: 30px solid $color-5;
   @include box-shadow;
   margin: 30px 0 15px -30px;
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   width: 100%;
   z-index: 50;
   & h3 {
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
     font-size: $font-size-medium;
     @include margin-padding(40px 0 0 -5px, 10px);
     transform: rotate(-3deg);
@@ -47,6 +55,7 @@
     font-size: $font-size-small;
     line-height: 1.2rem;
     @include margin-padding(0, 5px 25px 25px 20px);
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
   & p:nth-of-type(1) {
@@ -79,6 +88,7 @@
   @include breakpoint(medium) {
     padding: 0 10px 10px 50px;
     text-align: right;
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
     & h3 {
       margin: 40px 40px 0 0;
@@ -91,7 +101,9 @@
     width: 40%;
   }
   &::before {
-    background: url('images/pin.svg') 50% 0% no-repeat, $color-3;
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    background: url('images/pin.svg') 50% 0 no-repeat, $color-3;
     background-size: 40px;
     @include box-shadow;
     content: '';
@@ -102,7 +114,7 @@
     width: 100%;
     z-index: -1;
     @include breakpoint(large) {
-      background: url('images/red-leaves.png') -5% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, $color-3;
+      background: url('images/red-leaves.png') -5% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, $color-3;
       background-size: 150px, 35px;
     }
   }
@@ -110,20 +122,21 @@
 
 //"Benefits"ticket--white ticket with barcode and gold line  
 .benefits {
-  @include center(100%, 180px);
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
   @include box-shadow;
-  background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
-  @include margin-padding(40px auto 40px, 35px 20px 20px 20px);
-  position: relative;
+  @include margin-padding(30px auto 30px, 35px 20px 20px 20px);
+  max-width: 180px;
   transform: rotate(2deg);
+  width: 100%;
   z-index: 100;
   & h3 {
-    text-align: center;
     margin-bottom: 5px;
     margin-top: 7px;
-    z-index: 100;
+    text-align: center;
   }
   & p {
     border-bottom: 8px solid $color-7;
@@ -136,13 +149,13 @@
     animation: hover_flutter 1s ease;
   }
   @include breakpoint(xsmall) {
-    @include center(100%);
-    background: url('images/barcode.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+    background: url('images/barcode.png') 105% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
     background-size: 130px, 40px;
     grid-column: 1 / span 2;
     height: auto;
     margin: 30px auto;
     max-width: 600px;
+    width: 90%;
     & h3 {
       margin: 0 0 5px 20px;
       text-align: left;
@@ -155,9 +168,13 @@
     }
   }
   @include breakpoint(medium) {
+    -ms-transform: rotate(2deg) translateY(20px); 
+    -webkit-transform: rotate(2deg) translateY(20px); 
     transform: rotate(2deg) translateY(20px);
   }
   @include breakpoint(large) {
+    -ms-transform: rotate(2deg) translateY(0px); 
+    -webkit-transform: rotate(2deg) translateY(0px); 
     grid-column: 2 / 3;
     margin: 160px 0 200px 20px;
     max-height: 200px;
@@ -170,9 +187,9 @@
 
 //"Requirements"paper--white paper with brown text and checkmark 
 .requirements {
-  @include box-shadow;
-  background: url('images/check.png') 0% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
+  background: url('images/check.png') 0% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-size: 80px, 40px;
+  @include box-shadow;
   @include margin-padding(0 0 0 -10px, 30px 20px 30px 60px);
   width: 85%;
   & h3 {
@@ -248,7 +265,7 @@ p[role=contentinfo] {
   bottom: -142px;
   color: #ffffff;
   font-size: $font-size-large;
-  left: 0px;
+  left: 0;
   max-width: 100%;
   padding: 3rem;
   position: absolute;

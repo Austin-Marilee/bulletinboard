@@ -18,27 +18,25 @@
 
 /* basic elements */
 html {
-  @include margin-padding(0, 0);
   box-sizing: border-box;
+  @include margin-padding(0, 0);
 }
-
-
 body {
   background: $color-1;
   color: $color-2;
   font-family: $primary-font;
   font-size: 16pt;
   line-height: 1.5rem;
+  @include margin-padding(0, 0);
 }
-
 p {
   margin-top: 0;
 }
 
 /* specific divs */
 .page-wrapper {
-  @include margin-padding(0 0, 0 40px 200px 40px);
   border-top: 150px solid $color-2;
+  @include margin-padding(0 0, 0 40px 200px 40px);
   position: relative;
   @include breakpoint(small) {
     background-image: url('images/burlap.jpg');
@@ -53,17 +51,15 @@ p {
 /*medium styles*/
 
 @media (min-width: 45em) {
-  section.intro {
+  .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   header {
     left: 220px;
     position: absolute;
   }
-
-  div#zen-supporting {
+  #zen-supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

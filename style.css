@@ -13,45 +13,47 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 html {
-  line-height: 1.15;
-  /* 1 */
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  line-height: 1.15;
+  /* 1 */
 }
 
 /* Sections
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the margin in all browsers.
- */
+   * Remove the margin in all browsers.
+   */
 body {
   margin: 0;
 }
 
 /**
- * Render the `main` element consistently in IE.
- */
+   * Render the `main` element consistently in IE.
+   */
 main {
   display: block;
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -60,9 +62,9 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -71,39 +73,40 @@ pre {
 }
 
 /* Text-level semantics
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the gray background on active links in IE 10.
- */
+   * Remove the gray background on active links in IE 10.
+   */
 a {
   background-color: transparent;
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 code,
 kbd,
 samp {
@@ -114,16 +117,16 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
- */
+   * Add the correct font size in all browsers.
+   */
 small {
   font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
 sub,
 sup {
   font-size: 75%;
@@ -141,20 +144,20 @@ sup {
 }
 
 /* Embedded content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
- */
+   * Remove the border on images inside links in IE 10.
+   */
 img {
   border-style: none;
 }
 
 /* Forms
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
 button,
 input,
 optgroup,
@@ -171,9 +174,9 @@ textarea {
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
 button,
 input {
   /* 1 */
@@ -181,9 +184,9 @@ input {
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
 button,
 select {
   /* 1 */
@@ -191,51 +194,53 @@ select {
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -moz-appearance: button;
   -webkit-appearance: button;
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+   * Remove the inner border and padding in Firefox.
+   */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+   * Restore the focus styles unset by the previous rule.
+   */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 /**
- * Correct the padding in Firefox.
- */
+   * Correct the padding in Firefox.
+   */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -250,44 +255,46 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
 progress {
   vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
+   * Remove the default vertical scrollbar in IE 10+.
+   */
 textarea {
   overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -moz-appearance: textfield;
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -295,17 +302,19 @@ textarea {
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -moz-appearance: none;
   -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 ::-webkit-file-upload-button {
+  -moz-appearance: button;
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
@@ -313,33 +322,33 @@ textarea {
 }
 
 /* Interactive
-   ========================================================================== */
+     ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+   * Add the correct display in all browsers.
+   */
 summary {
   display: list-item;
 }
 
 /* Misc
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Add the correct display in IE 10+.
- */
+   * Add the correct display in IE 10+.
+   */
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+   * Add the correct display in IE 10.
+   */
 [hidden] {
   display: none;
 }
@@ -393,14 +402,17 @@ a:link {
   font-weight: bold;
   text-decoration: none;
 }
+
 a:visited {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
 }
+
 a:hover {
   color: #ba8563;
 }
+
 a:active {
   color: #ffffff;
   font-weight: bold;
@@ -428,8 +440,15 @@ header h1 {
   vertical-align: middle;
   width: 155px;
 }
+
 @media (min-width: 45em) {
   header h1 {
+    -ms-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    height: 230px;
+    margin-top: -180px;
+    transform: translateX(-100px);
+    width: 255px;
     background-image: url(images/logo_blue.png);
     background-repeat: no-repeat;
     background-size: 300px 300px;
@@ -443,12 +462,15 @@ header h1 {
 }
 
 header h2 {
+  -ms-transform: translateY(16px);
+  -webkit-transform: translateY(16px);
+  background-color: #ffffff;
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
-  background-color: #ffffff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   color: #382519;
   font-size: 1.3rem;
   line-height: 1.2rem;
@@ -458,10 +480,14 @@ header h2 {
   width: 135px;
   z-index: 70;
 }
+
 header h2:hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 @media (min-width: 45em) {
   header h2 {
     left: 220px;
@@ -469,12 +495,14 @@ header h2:hover {
     top: 140px;
   }
 }
+
 @media (min-width: 53.125em) {
   header h2 {
     right: -395px;
     top: 115px;
   }
 }
+
 @media (min-width: 75.1em) {
   header h2 {
     right: -380px;
@@ -484,23 +512,28 @@ header h2:hover {
 }
 
 .summary {
+  -ms-transform: translateY(15px);
+  -webkit-transform: translateY(15px);
   background-image: url("images/flower-combo.png");
   background-repeat: no-repeat;
   background-size: 370px 370px;
   background-position: right -180px bottom -150px;
   font-size: 0.8em;
   background-color: #ffffff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 0 auto 40px auto;
   padding: 0 25px 160px 25px;
   transform: translateY(15px);
   width: 200px;
-  z-index: 70;
+  z-index: 10;
 }
+
 .summary p {
   line-height: 1.3rem;
   width: 175px;
 }
+
 @media (min-width: 45em) {
   .summary {
     left: 440px;
@@ -508,6 +541,7 @@ header h2:hover {
     top: 230px;
   }
 }
+
 @media (min-width: 53.125em) {
   .summary {
     left: 560px;
@@ -515,6 +549,7 @@ header h2:hover {
     z-index: 70;
   }
 }
+
 @media (min-width: 75.1em) {
   .summary {
     left: 553px;
@@ -523,12 +558,15 @@ header h2:hover {
 }
 
 .preamble {
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  background-color: #382519;
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
-  background-color: #382519;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   margin: 20px 0 15px 0;
   padding: 30px;
@@ -536,23 +574,36 @@ header h2:hover {
   transform: rotate(-1deg);
   width: 85%;
 }
+
 .preamble:hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .preamble.preamble h3 {
   font-size: 1.3rem;
 }
+
 .preamble.preamble p {
   font-size: 1rem;
 }
+
 @media (min-width: 45em) {
   .preamble {
-    margin: 140px auto 15px auto;
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    width: 90%;
+    margin-top: 140px;
     transform: rotate(-4deg);
     width: 75%;
   }
 }
+
 @media (min-width: 53.125em) {
   .preamble {
     margin: 140px 0 0 0;
@@ -561,12 +612,15 @@ header h2:hover {
 }
 
 .explanation {
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  background-color: #ec637d;
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
-  background-color: #ec637d;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
@@ -576,23 +630,32 @@ header h2:hover {
   padding: 30px;
   transform: rotate(1deg);
 }
+
 .explanation:hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .explanation h3 {
   font-size: 1.3rem;
   margin-top: 20px;
   text-align: center;
 }
+
 @media (min-width: 53.125em) {
   .explanation {
     max-width: 80%;
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 }
+
 @media (min-width: 75.1em) {
   .explanation {
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
     max-width: 350px;
     position: absolute;
     right: 30px;
@@ -605,31 +668,41 @@ header h2:hover {
 .participation {
   background-color: #4b5548;
   border: 30px solid #4b5548;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 30px 0 15px -30px;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   width: 100%;
   z-index: 50;
 }
+
 .participation h3 {
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
   font-size: 1.3rem;
   margin: 40px 0 0 -5px;
   padding: 10px;
   transform: rotate(-3deg);
 }
+
 .participation p {
   font-size: 1rem;
   line-height: 1.2rem;
   margin: 0;
   padding: 5px 25px 25px 20px;
-  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
+
 .participation p:nth-of-type(1) {
   margin-left: -10px;
 }
+
 .participation p:nth-of-type(3) {
   margin-left: 10px;
 }
+
 @media (min-width: 45em) {
   .participation {
     margin-left: 15px;
@@ -657,16 +730,19 @@ header h2:hover {
     padding: 5px 20px 0 0;
   }
 }
+
 @media (min-width: 53.125em) {
   .participation {
     padding: 0 10px 10px 50px;
     text-align: right;
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
   .participation h3 {
     margin: 40px 40px 0 0;
   }
 }
+
 @media (min-width: 75.1em) {
   .participation {
     padding: 0 20px 20px 110px;
@@ -675,11 +751,15 @@ header h2:hover {
     width: 40%;
   }
 }
+
 .participation::before {
-  background: url("images/pin.svg") 50% 0% no-repeat, #efd9bf;
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  background: url("images/pin.svg") 50% 0 no-repeat, #efd9bf;
   background-size: 40px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  content: "";
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  content: '';
   height: 100%;
   left: -5px;
   position: absolute;
@@ -687,34 +767,36 @@ header h2:hover {
   width: 100%;
   z-index: -1;
 }
+
 @media (min-width: 75.1em) {
   .participation::before {
-    background: url("images/red-leaves.png") -5% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #efd9bf;
+    background: url("images/red-leaves.png") -5% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #efd9bf;
     background-size: 150px, 35px;
   }
 }
 
 .benefits {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  width: 180px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background: url("images/barcode_horizontal_2nd.png") 42% 98% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
-  margin: 40px auto 40px;
+  margin: 30px auto 30px;
   padding: 35px 20px 20px 20px;
-  position: relative;
+  max-width: 180px;
   transform: rotate(2deg);
+  width: 100%;
   z-index: 100;
 }
+
 .benefits h3 {
-  text-align: center;
   margin-bottom: 5px;
   margin-top: 7px;
-  z-index: 100;
+  text-align: center;
 }
+
 .benefits p {
   border-bottom: 8px solid #f2b975;
   font-size: 1rem;
@@ -722,21 +804,23 @@ header h2:hover {
   padding: 5px 20px 1em 20px;
   z-index: 100;
 }
+
 .benefits:hover {
-  animation: hover_flutter 1s ease;
+  -webkit-animation: hover_flutter 1s ease;
+          animation: hover_flutter 1s ease;
 }
+
 @media (min-width: 35.9em) {
   .benefits {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    width: 90%;
-    background: url("images/barcode.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+    background: url("images/barcode.png") 105% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
     background-size: 130px, 40px;
-    grid-column: 1/span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
     height: auto;
     margin: 30px auto;
     max-width: 600px;
+    width: 90%;
   }
   .benefits h3 {
     margin: 0 0 5px 20px;
@@ -749,14 +833,21 @@ header h2:hover {
     padding-top: 0;
   }
 }
+
 @media (min-width: 53.125em) {
   .benefits {
+    -webkit-transform: rotate(2deg) translateY(20px);
     transform: rotate(2deg) translateY(20px);
   }
 }
+
 @media (min-width: 75.1em) {
   .benefits {
-    grid-column: 2/3;
+    -ms-transform: rotate(2deg) translateY(0px);
+    -webkit-transform: rotate(2deg) translateY(0px);
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
     margin: 160px 0 200px 20px;
     max-height: 200px;
     max-width: 700px;
@@ -767,13 +858,15 @@ header h2:hover {
 }
 
 .requirements {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background: url("images/check.png") 0% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  background: url("images/check.png") 0% 45% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-size: 80px, 40px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 0 0 0 -10px;
   padding: 30px 20px 30px 60px;
   width: 85%;
 }
+
 .requirements h3 {
   border-bottom: 15px solid #382519;
   margin-bottom: 10px;
@@ -781,28 +874,38 @@ header h2:hover {
   text-transform: uppercase;
   width: 95%;
 }
+
 .requirements p {
   font-size: 1rem;
   width: 90%;
 }
+
 .requirements p:nth-of-type(1) {
   padding-top: 15px;
 }
+
 .requirements role {
   background-color: #382519;
 }
+
 @media (min-width: 45em) {
   .requirements {
-    grid-column: 1/span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
     margin: 20px auto;
     max-width: 600px;
   }
 }
+
 @media (min-width: 53.125em) {
   .requirements {
-    grid-column: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
   }
 }
+
 @media (min-width: 75.1em) {
   .requirements {
     margin: 60px auto 20px auto;
@@ -812,11 +915,13 @@ header h2:hover {
 .requirements {
   background: url("images/check.png") 0% 45% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
   background-size: 80px, 40px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 0 0 0 -10px;
   padding: 30px 20px 30px 60px;
   width: 85%;
 }
+
 .requirements h3 {
   border-bottom: 15px solid #382519;
   margin-bottom: 10px;
@@ -824,28 +929,38 @@ header h2:hover {
   text-transform: uppercase;
   width: 95%;
 }
+
 .requirements p {
   font-size: 1rem;
   width: 90%;
 }
+
 .requirements p:nth-of-type(1) {
   padding-top: 15px;
 }
+
 .requirements role {
   background-color: #382519;
 }
+
 @media (min-width: 45em) {
   .requirements {
-    grid-column: 1/span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
     margin: 20px auto;
     max-width: 600px;
   }
 }
+
 @media (min-width: 53.125em) {
   .requirements {
-    grid-column: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
   }
 }
+
 @media (min-width: 75.1em) {
   .requirements {
     margin: 30px auto 20px auto;
@@ -857,16 +972,18 @@ p[role=contentinfo] {
   bottom: -142px;
   color: #ffffff;
   font-size: 1.4rem;
-  left: 0px;
+  left: 0;
   max-width: 100%;
   padding: 3rem;
   position: absolute;
   text-align: center;
 }
+
 p[role=contentinfo] a {
   color: #ffffff;
   font-weight: normal;
 }
+
 @media (min-width: 45em) {
   p[role=contentinfo] {
     font-size: 1.3rem;
@@ -874,6 +991,7 @@ p[role=contentinfo] a {
     text-align: right;
   }
 }
+
 @media (min-width: 53.125em) {
   p[role=contentinfo] {
     bottom: -160px;
@@ -894,7 +1012,8 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: normal;
@@ -904,45 +1023,60 @@ p[role=contentinfo] a {
   max-width: 200px;
   position: absolute;
   top: -15px;
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .design-archives:hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-archives h3 {
   font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 35px 0 0 0;
   text-transform: capitalize;
 }
+
 .design-archives ul {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
   margin: 0;
   padding: 0;
-  grid-column: 1/3;
 }
+
 .design-archives li {
   line-height: 1.5rem;
 }
+
 .design-archives:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+
 @media (min-width: 35.9em) {
   .design-archives {
+    font-size: 1.3rem;
     margin: 0 auto;
     padding: 20px;
-    font-size: 1.3rem;
   }
   .design-archives li {
-    line-height: 2rem;
+    line-height: 2.0rem;
   }
 }
+
 @media (min-width: 45em) {
   .design-archives {
     font-weight: normal;
     left: 70%;
     top: -75px;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   .design-archives li {
     line-height: 1.6rem;
@@ -960,13 +1094,15 @@ p[role=contentinfo] a {
   width: 90%;
   z-index: 20;
 }
+
 .design-selection h3 {
   background-color: #efd9bf;
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-left: auto;
   margin-right: auto;
   max-width: 250px;
@@ -976,11 +1112,18 @@ p[role=contentinfo] a {
   text-align: center;
   text-transform: capitalize;
 }
+
 .design-selection h3:hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection ul {
+  -ms-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  display: -ms-grid;
   display: grid;
   grid-gap: 30px;
   justify-items: center;
@@ -989,20 +1132,31 @@ p[role=contentinfo] a {
   max-width: 500px;
   transform: translateX(-20px);
 }
+
 .design-selection li {
   background-color: #efd9bf;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.1rem;
-  flex-flow: column nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   height: 90px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
   padding: 45px 15px 20px 15px;
   text-align: center;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 130px;
 }
+
 @media (min-width: 35.9em) {
   .design-selection li {
     font-size: 1.3rem;
@@ -1019,6 +1173,7 @@ p[role=contentinfo] a {
     text-align: right;
   }
 }
+
 @media (min-width: 53.125em) {
   .design-selection li {
     font-size: 1.3rem;
@@ -1030,35 +1185,58 @@ p[role=contentinfo] a {
     padding: 40px 15px;
   }
 }
+
 .design-selection li:nth-child(1) {
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
   background-size: 35px;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   transform: rotate(-3deg);
 }
+
 .design-selection li:nth-child(1):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(2) {
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
   background-size: 35px;
-  grid-column: 2/3;
-  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   transform: rotate(3deg);
 }
+
 .design-selection li:nth-child(2):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(3) {
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -1066,11 +1244,17 @@ p[role=contentinfo] a {
   background-size: 35px;
   transform: rotate(2deg);
 }
+
 .design-selection li:nth-child(3):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(4) {
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -1078,11 +1262,17 @@ p[role=contentinfo] a {
   background-size: 35px;
   transform: rotate(-5deg);
 }
+
 .design-selection li:nth-child(4):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(5) {
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -1090,10 +1280,14 @@ p[role=contentinfo] a {
   background-size: 35px;
   transform: rotate(3deg);
 }
+
 .design-selection li:nth-child(5):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(6) {
   background-image: url("images/pin.svg");
   background-position: top center;
@@ -1101,23 +1295,35 @@ p[role=contentinfo] a {
   background-size: 40px;
   background-size: 35px;
 }
+
 .design-selection li:nth-child(6):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(7) {
-  transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
   background-size: 35px;
+  transform: rotate(-3deg);
 }
+
 .design-selection li:nth-child(7):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li:nth-child(8) {
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
   background-image: url("images/pin.svg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -1125,19 +1331,27 @@ p[role=contentinfo] a {
   background-size: 35px;
   transform: rotate(2deg);
 }
+
 .design-selection li:nth-child(8):hover {
-  animation: pushpin 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+  -webkit-animation: pushpin .5s;
+          animation: pushpin .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
+          transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
+
 .design-selection li a:nth-child(2) {
   font-weight: normal;
 }
+
 .design-selection li:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 .design-selection li a:link {
   color: #382519;
 }
+
 @media (min-width: 53.125em) {
   .design-selection {
     bottom: 5%;
@@ -1154,18 +1368,24 @@ p[role=contentinfo] a {
     width: 90%;
   }
 }
+
 @media (min-width: 75.1em) {
   .design-selection {
+    -ms-transform: scale(1.2) translateX(-50px);
+    -webkit-transform: scale(1.2) translateX(-50px);
     bottom: 9%;
     transform: scale(1.2) translateX(-50px);
   }
 }
 
 .zen-resources {
-  background: url("images/blue-leaves.png") 85% 120% no-repeat, url("images/pin.svg") 50% 0% no-repeat, #ffffff;
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  background: url("images/blue-leaves.png") 85% 120% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-color: #ec637d;
   background-size: 150px, 40px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 30px auto 0;
   max-width: 200px;
@@ -1174,54 +1394,65 @@ p[role=contentinfo] a {
   top: 10px;
   transform: rotate(-5deg);
 }
+
 .zen-resources:before {
   border-right: 140px solid transparent;
   border-top: 75px solid #ec637d;
   bottom: 0;
   content: "";
-  filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
   height: 0;
   left: 0;
   margin-bottom: -71px;
   position: absolute;
   width: 0;
 }
+
 .zen-resources:after {
   border-left: 140px solid transparent;
   border-top: 75px solid #ec637d;
   bottom: 0;
   content: "";
-  filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
   height: 0;
   margin-bottom: -71px;
   position: absolute;
   right: 0;
   width: 0;
 }
+
 .zen-resources a {
   font-weight: 100;
 }
+
 .zen-resources h3 {
   color: #ffffff;
   font-size: 1.3rem;
   margin: 25px 0 5px 0;
   text-transform: capitalize;
 }
+
 .zen-resources li {
   font-size: 1.3rem;
   line-height: 1.6rem;
 }
+
 .zen-resources li a:hover {
   color: #efd9bf;
 }
+
 .zen-resources li a:link {
   color: #ffffff;
   font-weight: normal;
 }
+
 .zen-resources ul {
   margin: 0;
   padding: 0;
 }
+
 @media (min-width: 45em) {
   .zen-resources {
     left: -108px;
@@ -1229,6 +1460,7 @@ p[role=contentinfo] a {
     top: 15px;
   }
 }
+
 @media (min-width: 53.125em) {
   .zen-resources {
     left: -270px;
@@ -1236,6 +1468,7 @@ p[role=contentinfo] a {
     z-index: 1;
   }
 }
+
 @media (min-width: 75.1em) {
   .zen-resources {
     left: -365px;
@@ -1245,16 +1478,22 @@ p[role=contentinfo] a {
 footer {
   background-color: #efd9bf;
   bottom: -275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
   padding: 30px 0;
   position: absolute;
   width: 100%;
 }
+
 footer a {
   background: transparent;
 }
+
 @media (min-width: 45em) {
   footer {
     bottom: -265px;
@@ -1268,6 +1507,7 @@ a.zen-validate-html {
   background-position: center center;
   font-size: 0;
   padding: 35px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1278,6 +1518,7 @@ a.zen-validate-css {
   background-position: center center;
   font-size: 0;
   padding: 35px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1288,6 +1529,7 @@ a.zen-license {
   background-position: center center;
   font-size: 0;
   padding: 35px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1298,6 +1540,7 @@ a.zen-github {
   background-position: center center;
   font-size: 0;
   padding: 35px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1308,6 +1551,7 @@ a.zen-accessibility {
   background-position: center center;
   font-size: 0;
   padding: 35px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1316,10 +1560,25 @@ a.zen-validate-css:hover,
 a.zen-license:hover,
 a.zen-github:hover,
 a.zen-accessibility:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 /*keyframes*/
+@-webkit-keyframes pushpin {
+  0% {
+    background-position-y: 4px;
+  }
+  50% {
+    background-position-y: 5px;
+  }
+  75% {
+    background-size: 33px;
+  }
+  100% {
+    background-position-y: 5px;
+  }
+}
 @keyframes pushpin {
   0% {
     background-position-y: 4px;
@@ -1334,40 +1593,99 @@ a.zen-accessibility:hover {
     background-position-y: 5px;
   }
 }
+
+@-webkit-keyframes hover_flutter {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  25% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  75% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
 @keyframes hover_flutter {
   0% {
-    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
   25% {
-    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
   }
   50% {
-    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
   }
   75% {
-    transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
   }
   100% {
-    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
 }
+
+@-webkit-keyframes hover_flutter2 {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  25% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  75% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
 @keyframes hover_flutter2 {
   0% {
-    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
   25% {
-    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
   50% {
-    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
   75% {
-    transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
   }
   100% {
-    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 }
+
 h1,
 h2,
 h3,
@@ -1410,14 +1728,17 @@ a:link {
   font-weight: bold;
   text-decoration: none;
 }
+
 a:visited {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
 }
+
 a:hover {
   color: #ba8563;
 }
+
 a:active {
   color: #ffffff;
   font-weight: bold;
@@ -1434,9 +1755,10 @@ li {
 
 /* basic elements */
 html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -1445,6 +1767,8 @@ body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16pt;
   line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -1453,11 +1777,12 @@ p {
 
 /* specific divs */
 .page-wrapper {
+  border-top: 150px solid #382519;
   margin: 0 0;
   padding: 0 40px 200px 40px;
-  border-top: 150px solid #382519;
   position: relative;
 }
+
 @media (min-width: 45em) {
   .page-wrapper {
     background-image: url("images/burlap.jpg");
@@ -1465,6 +1790,7 @@ p {
     padding: 0 40px;
   }
 }
+
 @media (min-width: 53.125em) {
   .page-wrapper {
     margin: auto;
@@ -1474,20 +1800,21 @@ p {
 
 /*medium styles*/
 @media (min-width: 45em) {
-  section.intro {
+  .intro {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-
   header {
     left: 220px;
     position: absolute;
   }
-
-  div#zen-supporting {
+  #zen-supporting {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

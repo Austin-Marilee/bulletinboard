@@ -15,6 +15,12 @@ header h1 {
   vertical-align: middle;
   width: 155px;
   @include breakpoint(small) {
+    -ms-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    height: 230px;
+    margin-top: -180px;
+    transform: translateX(-100px);
+    width: 255px;
     @include background-img (url(images/logo_blue.png),
     no-repeat,
     300px,
@@ -31,8 +37,10 @@ header h1 {
 
 //title (h2) for .summary/Beauty of CSS card
 header h2 {
-  @include pin;
+  -ms-transform: translateY(16px);
+  -webkit-transform: translateY(16px);
   background-color: $color-6;
+  @include pin;
   @include box-shadow;
   color: $color-2;
   font-size: $font-size-medium;
@@ -59,6 +67,8 @@ header h2 {
 
 //"Beauty of CSS" card--white card with flower image (Title=header h2)
 .summary {
+  -ms-transform: translateY(15px);
+  -webkit-transform: translateY(15px);
   @include background-img (url('images/flower-combo.png'),
   no-repeat,
   370px,
@@ -71,7 +81,7 @@ header h2 {
   @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
   transform: translateY(15px);
   width: 200px;
-  z-index: 70;
+  z-index: 10;
   & p {
     line-height: 1.3rem;
     width: 175px;
@@ -94,8 +104,10 @@ header h2 {
 
 //"The Road to Enlightenment card" --dark brown card with white text
 .preamble {
-  @include pin;
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
   background-color: $color-2;
+  @include pin;
   @include box-shadow;
   color: $color-6;
   @include margin-padding(20px 0 15px 0, 30px);
@@ -109,7 +121,10 @@ header h2 {
     font-size: $font-size-small;
   }
   @include breakpoint(small) {
-    margin: 140px auto 15px auto;
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    @include center (75%);
+    margin-top: 140px;
     transform: rotate(-4deg);
     width: 75%
   }
