@@ -10,8 +10,8 @@ header h1 {
   center,
   center,
   0);
-  @include margin-padding(-155px auto 40px auto, 80px 30px 0px 30px);
   height: 130px;
+  @include margin-padding(-155px auto 40px auto, 80px 30px 0 30px);
   vertical-align: middle;
   width: 155px;
   @include breakpoint(small) {
