@@ -83,17 +83,18 @@
     text-align: right;
     transform: rotate(-3deg);
     & h3 {
-      margin: 30px 40px 0 0;
+      margin: 40px 40px 0 0;
     }
   }
   @include breakpoint(large) {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 110px;
     position: absolute;
     margin: 60px 0 20px 0;
     width: 40%;
   }
   &::before {
-    background-color: $color-3;
+    background: url('images/pin.svg') 50% 0% no-repeat, $color-3;
+    background-size: 40px;
     @include box-shadow;
     content: '';
     height: 100%;
@@ -102,10 +103,10 @@
     transform: rotate(-3deg);
     width: 100%;
     z-index: -1;
-  }
-  @include breakpoint(small) {
-    background: url('images/red-leaves.png') -5% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, $color-5;
-    background-size: 150px, 35px;
+    @include breakpoint(large) {
+      background: url('images/red-leaves.png') -5% 45% no-repeat, url('images/pin.svg') 50% 0% no-repeat, $color-3;
+      background-size: 150px, 35px;
+    }
   }
 }
 
