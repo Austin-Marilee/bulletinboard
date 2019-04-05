@@ -36,7 +36,7 @@ header h2 {
   -ms-transform: translateY(16px);
   -webkit-transform: translateY(16px);
   background-color: $color-6;
-  @include pin;
+  @include pin(auto);
   @include box-shadow;
   color: $color-2;
   font-size: $font-size-medium;
@@ -103,7 +103,7 @@ header h2 {
   -ms-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   background-color: $color-2;
-  @include pin;
+  @include pin(auto);
   @include box-shadow;
   color: $color-6;
   @include margin-padding(20px 0 15px 0, 30px);
@@ -116,13 +116,12 @@ header h2 {
   &.preamble p {
     font-size: $font-size-small;
   }
-
   @include breakpoint(small) {
     -ms-transform: rotate(-4deg);
     -webkit-transform: rotate(-4deg);
-    @include center (75%);
-    margin-top: 140px;
+    margin: 140px auto 0 auto;
     transform: rotate(-4deg);
+    width: 75%;
   }
   @include breakpoint(medium) {
     margin: 140px 0 0 0;

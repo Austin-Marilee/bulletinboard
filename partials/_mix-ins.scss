@@ -39,14 +39,16 @@ $width: 90%) {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-@mixin pin {
+@mixin pin($size) {
   background-image: $pin;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 40px;
+  background-size: $size;
   &:hover {
-  animation: pushpin .5s;
-  transition-timing-function: cubic-bezier(.1, 1.11, .01, .99);
+    -webkit-animation: pushpin .5s;
+    -ms-animation: pushpin .5s;
+    animation: pushpin .5s;
+    transition-timing-function: cubic-bezier(.1, 1.11, .01, .99);
   }
 }
 
