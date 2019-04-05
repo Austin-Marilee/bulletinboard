@@ -25,7 +25,6 @@ html {
 
 
 body {
-  @include margin-padding(0, 0);
   background: $color-1;
   color: $color-2;
   font-family: $primary-font;
