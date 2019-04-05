@@ -119,13 +119,14 @@
 
 //"Benefits"ticket--white ticket with barcode and gold line  
 .benefits {
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
   @include box-shadow;
   background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
   @include margin-padding(30px auto 30px, 35px 20px 20px 20px);
   max-width: 180px;
-  -ms-transform: rotate(2deg);
   transform: rotate(2deg);
   width: 100%;
   z-index: 100;
@@ -164,16 +165,18 @@
   }
   @include breakpoint(medium) {
     -ms-transform: rotate(2deg) translateY(20px); 
+    -webkit-transform: rotate(2deg) translateY(20px); 
     transform: rotate(2deg) translateY(20px);
   }
   @include breakpoint(large) {
+    -ms-transform: rotate(2deg) translateY(0px); 
+    -webkit-transform: rotate(2deg) translateY(0px); 
     grid-column: 2 / 3;
     margin: 160px 0 200px 20px;
     max-height: 200px;
     max-width: 700px;
     position: relative;
     right: -20px;
-    -ms-transform: rotate(2deg) translateY(0px); 
     transform: rotate(2deg) translateY(0px);
   }
 }

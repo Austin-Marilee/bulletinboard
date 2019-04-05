@@ -9,9 +9,9 @@
  */
 
  html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.15; /* 1 */
   }
   
   /* Sections
@@ -197,8 +197,8 @@
   [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
     -moz-appearance: button;
+    -webkit-appearance: button;
   }
   
   /**
@@ -290,8 +290,8 @@
    */
   
   [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
     -moz-appearance: textfield;
+    -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
   }
   
@@ -300,8 +300,8 @@
    */
   
   [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-appearance: none;
   }
   
   /**
@@ -310,8 +310,8 @@
    */
   
   ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
     -moz-appearance: button;
+    -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
   }
   
