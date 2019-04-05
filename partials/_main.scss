@@ -2,10 +2,10 @@
 
 //"So What Is This About?"card--pink card with white text
 .explanation {
-  @include box-shadow;
-  @include center(80%);
   @include pin;
   background-color: $color-4;
+  @include box-shadow;
+  @include center(80%);
   font-size: $font-size-small;
   padding: 30px;
   transform: rotate(1deg);
@@ -18,11 +18,11 @@
     max-width: 80%;
   }
   @include breakpoint(large) {
-    transform: rotate(3deg);
     max-width: 350px;
     position: absolute;
     right: 30px;
     top: 130px;
+    transform: rotate(3deg);
   }
 }
 
@@ -38,8 +38,8 @@
   width: 100%;
   z-index: 10;
   & h3 {
-    @include margin-padding(40px 0 0 -5px, 10px);
     font-size: $font-size-medium;
+    @include margin-padding(40px 0 0 -5px, 10px);
     transform: rotate(-3deg);
   }
   & p {
