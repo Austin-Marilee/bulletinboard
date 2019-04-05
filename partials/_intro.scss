@@ -53,6 +53,7 @@ header h2 {
   @include breakpoint(large) {
     right: -380px;
     top: 55px;
+    z-index: 70;
   }
 }
 

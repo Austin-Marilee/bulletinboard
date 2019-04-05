@@ -108,7 +108,7 @@
       font-size: $font-size-medium;
       height: 105px;
       @include center(150px);
-      padding: 50px 20px;
+      padding: 40px 15px;
     }
   }
   & li:nth-child(1) {
@@ -164,22 +164,19 @@
     color: $color-2;
   }
   @include breakpoint(medium) {
-    @include center(80%);
-    bottom: 7%;
-    font-size: $font-size-small;
-    left: 35%;
+    bottom: 5%;
+    font-size: $font-size-mid;
+    margin: 0;
+    max-width: 500px;
     position: absolute;
-    transform: translateY(100px);
-    p {
-      font-size: $font-size-medium;
-      line-height: 1.5rem;
-    }
-    ul {
-      @include center(60%);
+    right: 0;
+    & ul {
+      @include center(80%);
     }
   }
   @include breakpoint(large) {
-    bottom: 12%;
+    bottom: 9%;
+    transform: scale(1.2) translateX(-50px);
   }
 }
 
@@ -191,7 +188,7 @@
   background-size: 150px, 40px;
   @include box-shadow;
   font-family: $primary-font;
-  margin: auto;
+  margin: 30px auto 0;
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
