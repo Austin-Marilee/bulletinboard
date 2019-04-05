@@ -1288,9 +1288,9 @@ p[role=contentinfo] a {
 
 @media (min-width: 53.125em) {
   .design-selection {
-    bottom: 5%;
+    bottom: 8%;
     font-size: 1.1rem;
-    margin: 0;
+    margin: -40px;
     max-width: 500px;
     position: absolute;
     right: 0;

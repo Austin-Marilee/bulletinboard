@@ -185,9 +185,9 @@
     color: $color-2;
   }
   @include breakpoint(medium) {
-    bottom: 5%;
+    bottom: 8%;
     font-size: $font-size-mid;
-    margin: 0;
+    margin: -40px;
     max-width: 500px;
     position: absolute;
     right: 0;
