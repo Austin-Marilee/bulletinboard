@@ -183,7 +183,7 @@
 
 //"Requirements"paper--white paper with brown text and checkmark 
 .requirements {
-  background: url('images/check.png') 0% 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
+  background: url('images/check.png') 0 45% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-size: 80px, 40px;
   @include box-shadow;
   @include margin-padding(0 0 0 -10px, 30px 20px 30px 60px);
