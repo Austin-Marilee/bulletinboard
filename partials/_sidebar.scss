@@ -253,9 +253,8 @@
   }
   @include breakpoint(small) {
     left: 50px;
-    margin: 0;
+    margin: 20 0 0 0;
     top: 15px;
-
   }
   @include breakpoint(medium) {
     left: 100px;
