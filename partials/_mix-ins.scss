@@ -65,9 +65,9 @@ $font-size) {
 }
 
 @mixin links($weight, $decoration, $color) {
+  color: $color;
   font-weight: $weight;
   text-decoration: $decoration;
-  color: $color;
 }
 
 @mixin margin-padding($margin, $padding) {
