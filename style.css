@@ -1394,7 +1394,7 @@ p[role=contentinfo] a {
 
 @media (min-width: 45em) {
   .zen-resources {
-    left: 50px;
+    left: -108px;
     margin: 20 0 0 0;
     top: 15px;
   }
@@ -1402,9 +1402,15 @@ p[role=contentinfo] a {
 
 @media (min-width: 53.125em) {
   .zen-resources {
-    left: 100px;
-    margin-top: -50px;
+    left: -270px;
+    margin-top: -70px;
     z-index: 1;
+  }
+}
+
+@media (min-width: 75.1em) {
+  .zen-resources {
+    left: -365px;
   }
 }
 
