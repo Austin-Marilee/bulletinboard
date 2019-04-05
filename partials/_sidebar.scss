@@ -11,7 +11,8 @@
 //"Archives"links card--cream card with brown text at top right of screen
 .design-archives {
   background-color: $color-3;
-  @include pin(auto);
+  @include pin;
+  background-size: 40px;
   @include box-shadow;
   font-family: $primary-font;
   font-size: $font-size-mid;
@@ -69,7 +70,8 @@
   z-index: 20;
   & h3 {
     background-color: $color-3;
-    @include pin(auto);
+    @include pin;
+    background-size: 35px;
     @include box-shadow;
     @include center(250px);
     font-size: $font-size-extra-large;
@@ -119,7 +121,8 @@
   & li:nth-child(1) {
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     transform: rotate(-3deg);
@@ -127,7 +130,8 @@
   & li:nth-child(2) {
     -ms-transform: rotate(3deg);
     -webkit-transform: rotate(3deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     transform: rotate(3deg);
@@ -135,34 +139,40 @@
   & li:nth-child(3) {
     -ms-transform: rotate(2deg);
     -webkit-transform: rotate(2deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
     transform: rotate(2deg);
   }
   & li:nth-child(4) {
     -ms-transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;;
     transform: rotate(-5deg);
   }
   & li:nth-child(5) {
     -ms-transform: rotate(3deg);
     -webkit-transform: rotate(3deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
     transform: rotate(3deg);
   }
   & li:nth-child(6) {
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
   }
   & li:nth-child(7) {
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
     transform: rotate(-3deg);
   }
   & li:nth-child(8) {
     -ms-transform: rotate(2deg);
     -webkit-transform: rotate(2deg);
-    @include pin(35px);
+    @include pin;
+    background-size: 35px;
     transform: rotate(2deg);
   }
   & li a:nth-child(2) {

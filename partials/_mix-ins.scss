@@ -39,11 +39,11 @@ $width: 90%) {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-@mixin pin($size) {
+@mixin pin {
   background-image: $pin;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: $size;
+  background-size: 40px;
   &:hover {
     -webkit-animation: pushpin .5s;
     -ms-animation: pushpin .5s;

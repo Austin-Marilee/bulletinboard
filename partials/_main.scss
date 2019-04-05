@@ -3,7 +3,7 @@
 //"So What Is This About?"card--pink card with white text
 .explanation {
   background-color: $color-4;
-  @include pin(auto);
+  @include pin;
   @include box-shadow;
   @include center(80%);
   font-size: $font-size-small;
