@@ -178,9 +178,6 @@
       @include center(60%);
     }
   }
-  @include breakpoint(large) {
-    bottom: 12%;
-  }
 }
 
 
@@ -191,7 +188,7 @@
   background-size: 150px, 40px;
   @include box-shadow;
   font-family: $primary-font;
-  margin: auto;
+  margin: 40px auto 0;
   max-width: 200px;
   padding: 20px 20px 200px 20px;
   position: relative;
@@ -250,8 +247,7 @@
     top: 15px;
   }
   @include breakpoint(medium) {
-    left: 100px;
-    margin-top: -50px;
+    left: -50px;
     z-index: 1;
   }
 }

@@ -8,6 +8,7 @@
   @include center(80%);
   font-size: $font-size-small;
   padding: 30px;
+  margin-top: 30px;
   transform: rotate(1deg);
   & h3 {
     font-size: $font-size-medium;
@@ -49,30 +50,30 @@
     transform: rotate(-3deg);
   }
   & p:nth-of-type(1) {
-    margin-left: -10px;
+    transform: rotate(-3deg) translateX(-10px);
   }
   & p:nth-of-type(3) {
-    margin-left: 10px;
+    transform: rotate(-3deg) translateX(10px);
   }
   @include breakpoint(small) {
     margin-left: 15px;
     padding: 0 10px 20px 40px;
     width: 70%;
     & h3 {
-      @include margin-padding(40px 0 0 -40px, 10px);
+      @include margin-padding(40px 0 0 -45px, 10px);
     }
     & p {
       line-height: 1.4rem;
       width: 95%;
     }
     & p:nth-of-type(1) {
-      @include margin-padding(0 0 10px -25px, 5px 20px 0 0); 
+      @include margin-padding(0 0 10px -20px, 5px 20px 0 0); 
     }
     & p:nth-of-type(2) {
-      @include margin-padding(0 0 10px -15px, 5px 20px 0 0);
+      @include margin-padding(0 0 10px -20px, 5px 20px 0 0);
     }
     & p:nth-of-type(3) {
-      @include margin-padding(0 0 10px -5px, 5px 20px 0 0);
+      @include margin-padding(0 0 10px -15px, 5px 20px 0 0);
     }
   }
   @include breakpoint(medium) {
@@ -88,6 +89,9 @@
     position: absolute;
     margin: 60px 0 20px 0;
     width: 40%;
+    & h3 {
+      margin: 30px 45px 0 0;
+    }
   }
   &::before {
     background: url('images/pin.svg') 50% 0% no-repeat, $color-3;
@@ -113,7 +117,7 @@
   background: url('images/barcode_horizontal_2nd.png') 42% 98% no-repeat, url('images/pin.svg') 50% 0% no-repeat, #ffffff;
   background-size: 196px, 40px;
   height: 445px;
-  @include margin-padding(40px auto, 35px 20px 20px 20px);
+  @include margin-padding(30px auto, 35px 20px 20px 20px);
   transform: rotate(2deg);
   width: 180px;
   & h3 {
@@ -135,7 +139,7 @@
     height: auto;
     margin: 30px auto;
     max-width: 600px;
-    width: 100%;
+    width: 95%;
     z-index: 10;
     & h3 {
       margin: 0 0 5px 20px;
@@ -181,6 +185,9 @@
   }
   & role {
     background-color: $color-2;
+  }
+  @include breakpoint(xsmall) {
+    margin: 20px auto 40px;
   }
   @include breakpoint(small) {
     grid-column: 1 / span 2;
