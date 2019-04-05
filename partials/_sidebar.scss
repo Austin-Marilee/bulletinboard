@@ -177,7 +177,7 @@
     position: absolute;
     right: 0;
     & ul {
-      @include center(80%);
+      @include center(75%);
     }
   }
   @include breakpoint(large) {
