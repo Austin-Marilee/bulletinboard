@@ -170,14 +170,19 @@
     color: $color-2;
   }
   @include breakpoint(medium) {
-    bottom: 350px
-    font-size: $font-size-small;
+    bottom: 5%;
+    font-size: $font-size-mid;
+    margin: 0;
     max-width: 500px;
     position: absolute;
     right: 0;
     & ul {
       @include center(80%);
     }
+  }
+  @include breakpoint(large) {
+    bottom: 9%;
+    transform: scale(1.2) translateX(-50px);
   }
 }
 

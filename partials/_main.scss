@@ -217,9 +217,10 @@ p[role=contentinfo] {
     font-weight: normal
   }
   @include breakpoint(small) {
+    bottom: -130px;
+    font-size: $font-size-medium;
     padding: 60px 5% 90px 55%;
     text-align: right;
-    font-size: $font-size-medium;
   }
   @include breakpoint(medium) {
     bottom: -160px;

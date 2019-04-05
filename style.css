@@ -920,9 +920,10 @@ p[role=contentinfo] a {
 
 @media (min-width: 45em) {
   p[role=contentinfo] {
+    bottom: -130px;
+    font-size: 1.3rem;
     padding: 60px 5% 90px 55%;
     text-align: right;
-    font-size: 1.3rem;
   }
 }
 
@@ -1285,27 +1286,26 @@ p[role=contentinfo] a {
 
 @media (min-width: 53.125em) {
   .design-selection {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    width: 90%;
-    bottom: 6%;
-    font-size: 1rem;
-    left: 35%;
+    bottom: 5%;
+    font-size: 1.1rem;
+    margin: 0;
     max-width: 500px;
     position: absolute;
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-  .design-selection p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+    right: 0;
   }
   .design-selection ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
     width: 90%;
+  }
+}
+
+@media (min-width: 75.1em) {
+  .design-selection {
+    bottom: 9%;
+    -webkit-transform: scale(1.2) translateX(-50px);
+            transform: scale(1.2) translateX(-50px);
   }
 }
 
@@ -1420,7 +1420,7 @@ footer a {
 
 @media (min-width: 45em) {
   footer {
-    bottom: -270px;
+    bottom: -265px;
   }
 }
 

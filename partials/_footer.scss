@@ -12,7 +12,7 @@ footer {
         background: transparent;
     }
     @include breakpoint(small) {
-        bottom: -270px;
+        bottom: -265px;
     }
 }
 
@@ -28,7 +28,6 @@ a.zen-validate-html {
     padding: 35px;
     transition: 0.5s;
 }
-
 a.zen-validate-css {
     @include background-img (url('images/icons/css.png'),
     no-repeat,
@@ -40,7 +39,6 @@ a.zen-validate-css {
     padding: 35px;
     transition: 0.5s;
 }
-
 a.zen-license {
     @include background-img (url('images/icons/creative.png'),
     no-repeat,
@@ -52,9 +50,7 @@ a.zen-license {
     padding: 35px;
     transition: 0.5s;
 }
-
 a.zen-github {
-
     @include background-img (url('images/icons/github.png'),
     no-repeat,
     55px,
@@ -65,9 +61,7 @@ a.zen-github {
     padding: 35px;
     transition: 0.5s;
 }
-
 a.zen-accessibility {
-
     @include background-img (url('images/icons/accessible.png'),
     no-repeat,
     60px,
@@ -78,7 +72,6 @@ a.zen-accessibility {
     padding: 35px;
     transition: 0.5s;
 }
-
 a.zen-validate-html:hover,
 a.zen-validate-css:hover,
 a.zen-license:hover,
