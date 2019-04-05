@@ -71,40 +71,50 @@
   @include center(100%);
   z-index: 20;
   & h3 {
+    background-color: $color-3;
+    @include pin;
     @include box-shadow;
     @include center(250px);
-    @include pin;
-    background-color: $color-3;
     font-size: $font-size-extra-large;
     padding: 55px 10px;
-    text-transform: capitalize;
     text-align: center;
+    text-transform: capitalize;
   }
   & ul {
-    @include margin-padding(20px auto, 0);
     display: grid;
+    grid-gap: 30px;
+    justify-items: center;
+    @include margin-padding(20px auto, 0);
     max-width: 500px;
+    transform: translateX(-20px);
   }
   & li {
-    @include box-shadow;
-    @include center(70%);
-    @include margin-padding(10px, 45px 15px 20px 15px);
     background-color: $color-3;
+    @include box-shadow;
     display: flex;
-    font-size: 0.8rem;
+    font-size: $font-size-mid;
     flex-flow: column nowrap;
+    height: 90px;
     justify-content: center;
+    @include margin-padding(auto, 45px 15px 20px 15px);
     text-align: center;
     transition: 0.5s;
-    @include breakpoint(small) {
+    width: 130px;
+    @include breakpoint(xsmall) {
       & h3 {
         @include margin-padding(40px 10px 0 0, 10px);
         text-align: right;
       }
-      @include center(175px);
-      height: 125px;
       font-size: $font-size-medium;
+      height: 125px;
+      @include center(175px);
       padding: 50px 20px;
+    }
+    @include breakpoint(medium) {
+      font-size: $font-size-medium;
+      height: 105px;
+      @include center(150px);
+      padding: 40px 15px;
     }
   }
   & li:nth-child(1) {
@@ -160,21 +170,17 @@
     color: $color-2;
   }
   @include breakpoint(medium) {
-    @include center(80%);
-    bottom: 3%;
+    bottom: 350px
     font-size: $font-size-small;
-    left: 35%;
+    max-width: 500px;
     position: absolute;
-    transform: translateY(100px);
-    p {
-      font-size: $font-size-medium;
-      line-height: 1.5rem;
-    }
-    ul {
-      @include center(60%);
+    right: 0;
+    & ul {
+      @include center(80%);
     }
   }
 }
+
 
 //"Resources" ribbon--Pink ribbon with white text and green floral image
 .zen-resources {

@@ -14,7 +14,6 @@ header h1 {
   height: 130px;
   vertical-align: middle;
   width: 155px;
-
   @include breakpoint(small) {
     height: 230px;
     margin-top: -180px;
@@ -54,6 +53,7 @@ header h2 {
   @include breakpoint(large) {
     right: -380px;
     top: 55px;
+    z-index: 70;
   }
 }
 
