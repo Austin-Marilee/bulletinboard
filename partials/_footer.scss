@@ -77,5 +77,6 @@ a.zen-validate-css:hover,
 a.zen-license:hover,
 a.zen-github:hover,
 a.zen-accessibility:hover {
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
 }

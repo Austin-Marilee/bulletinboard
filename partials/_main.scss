@@ -8,6 +8,7 @@
   @include center(80%);
   font-size: $font-size-small;
   @include margin-padding(0 0 20px 0, 30px);
+  -ms-transform: rotate(1deg);
   transform: rotate(1deg);
   z-index: 20;
   & h3 {
@@ -17,6 +18,7 @@
   }
   @include breakpoint (medium) {
     max-width: 80%;
+    -ms-transform: translateY(30px);
     transform: translateY(30px);
   }
   @include breakpoint(large) {
@@ -24,6 +26,7 @@
     position: absolute;
     right: 30px;
     top: 130px;
+    -ms-transform: rotate(3deg);
     transform: rotate(3deg);
   }
 }
@@ -36,18 +39,21 @@
   border: 30px solid $color-5;
   @include box-shadow;
   margin: 30px 0 15px -30px;
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   width: 100%;
   z-index: 50;
   & h3 {
     font-size: $font-size-medium;
     @include margin-padding(40px 0 0 -5px, 10px);
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
   & p {
     font-size: $font-size-small;
     line-height: 1.2rem;
     @include margin-padding(0, 5px 25px 25px 20px);
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
   & p:nth-of-type(1) {
@@ -80,6 +86,7 @@
   @include breakpoint(medium) {
     padding: 0 10px 10px 50px;
     text-align: right;
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
     & h3 {
       margin: 40px 40px 0 0;
@@ -99,6 +106,7 @@
     height: 100%;
     left: -5px;
     position: absolute;
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
     width: 100%;
     z-index: -1;
@@ -117,6 +125,7 @@
   height: 445px;
   @include margin-padding(30px auto 30px, 35px 20px 20px 20px);
   max-width: 180px;
+  -ms-transform: rotate(2deg);
   transform: rotate(2deg);
   width: 100%;
   z-index: 100;
@@ -154,6 +163,7 @@
     }
   }
   @include breakpoint(medium) {
+    -ms-transform: rotate(2deg) translateY(20px); 
     transform: rotate(2deg) translateY(20px);
   }
   @include breakpoint(large) {
@@ -163,6 +173,7 @@
     max-width: 700px;
     position: relative;
     right: -20px;
+    -ms-transform: rotate(2deg) translateY(0px); 
     transform: rotate(2deg) translateY(0px);
   }
 }

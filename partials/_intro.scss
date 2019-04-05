@@ -17,6 +17,7 @@ header h1 {
   @include breakpoint(small) {
     height: 230px;
     margin-top: -180px;
+    -ms-transform: translateX(-100px);
     transform: translateX(-100px);
     width: 255px;
     @include background-img (url(images/logo_blue.png),
@@ -38,6 +39,7 @@ header h2 {
   font-size: $font-size-medium;
   line-height: 1.2rem;
   @include margin-padding(auto, 50px 90px 5px 25px);
+  -ms-transform: translateY(16px);
   transform: translateY(16px);
   width: 135px;
   @include breakpoint(small) {
@@ -69,6 +71,7 @@ header h2 {
   background-color: $color-6;
   @include box-shadow;
   @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
+  -ms-transform: translateY(15px);
   transform: translateY(15px);
   width: 200px;
   z-index: 10;
@@ -100,6 +103,7 @@ header h2 {
   color: $color-6;
   @include margin-padding(20px 0 15px 0, 30px);
   text-align: center;
+  -ms-transform: rotate(-1deg);
   transform: rotate(-1deg);
   width: 85%;
   &.preamble h3 {
@@ -112,6 +116,7 @@ header h2 {
   @include breakpoint(small) {
     @include center (75%);
     margin-top: 140px;
+    -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
   }
   @include breakpoint(medium) {
