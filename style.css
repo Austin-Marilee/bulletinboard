@@ -584,8 +584,11 @@ header h2:hover {
   background-size: 40px;
   background-color: #ec637d;
   font-size: 1rem;
+  margin: 0 0 20px 0;
   padding: 30px;
+  position: relative;
   transform: rotate(1deg);
+  z-index: 20;
 }
 .explanation:hover {
   animation: pushpin 0.5s;
@@ -599,6 +602,7 @@ header h2:hover {
 @media (min-width: 53.125em) {
   .explanation {
     max-width: 80%;
+    transform: translateY(30px);
   }
 }
 @media (min-width: 75.1em) {
@@ -619,7 +623,7 @@ header h2:hover {
   margin: 30px 0 15px -30px;
   transform: rotate(0deg);
   width: 100%;
-  z-index: 10;
+  z-index: 50;
 }
 .participation h3 {
   margin: 40px 0 0 -5px;
@@ -715,16 +719,22 @@ header h2:hover {
   height: 445px;
   margin: 40px auto 40px;
   padding: 35px 20px 20px 20px;
+  position: relative;
   transform: rotate(2deg);
+  z-index: 100;
 }
 .benefits h3 {
   text-align: center;
+  margin-bottom: 5px;
+  margin-top: 7px;
+  z-index: 100;
 }
 .benefits p {
   border-bottom: 8px solid #f2b975;
   font-size: 1rem;
   line-height: 1.2rem;
   padding: 5px 20px 1em 20px;
+  z-index: 100;
 }
 .benefits:hover {
   animation: hover_flutter 1s ease;
@@ -741,7 +751,6 @@ header h2:hover {
     height: auto;
     margin: 30px auto;
     max-width: 600px;
-    z-index: 10;
   }
   .benefits h3 {
     margin: 0 0 5px 20px;
@@ -754,6 +763,11 @@ header h2:hover {
     padding-top: 0;
   }
 }
+@media (min-width: 53.125em) {
+  .benefits {
+    transform: rotate(2deg) translateY(20px);
+  }
+}
 @media (min-width: 75.1em) {
   .benefits {
     grid-column: 2/3;
@@ -762,6 +776,7 @@ header h2:hover {
     max-width: 700px;
     position: relative;
     right: -20px;
+    transform: rotate(2deg) translateY(0px);
   }
 }
 
@@ -816,6 +831,7 @@ p[role=contentinfo] {
   left: 0px;
   max-width: 100%;
   padding: 3rem;
+  padding-right: 15px;
   position: absolute;
   text-align: center;
 }
