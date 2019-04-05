@@ -2,12 +2,6 @@
 
 csslint: There are 203 problems in C:\Users\hansb\Documents\BYU-I\CIT261\Github\bulletinboard\style.css.
 
-
-style.css
-2: warning at line 15, col 1
-Rule doesn't have all its properties in alphabetical order.
-html {
-
 style.css
 24: warning at line 363, col 1
 Heading (h1) has already been defined.
@@ -69,11 +63,6 @@ Heading (h1) has already been defined.
 header h1 {
 
 style.css
-36: warning at line 430, col 1
-Rule doesn't have all its properties in alphabetical order.
-header h1 {
-
-style.css
 37: warning at line 430, col 8
 Heading (h1) should not be qualified.
 header h1 {
@@ -99,18 +88,8 @@ Heading (h1) has already been defined.
   header h1 {
 
 style.css
-42: warning at line 445, col 3
-Rule doesn't have all its properties in alphabetical order.
-  header h1 {
-
-style.css
 43: warning at line 460, col 8
 Heading (h2) should not be qualified.
-header h2 {
-
-style.css
-44: warning at line 460, col 1
-Rule doesn't have all its properties in alphabetical order.
 header h2 {
 
 style.css
@@ -159,19 +138,9 @@ Heading (h2) has already been defined.
   header h2 {
 
 style.css
-54: warning at line 510, col 1
-Rule doesn't have all its properties in alphabetical order.
-.summary {
-
-style.css
 55: warning at line 522, col 3
 Using width with padding can sometimes make elements larger than you expect.
   padding: 0 25px 160px 25px;
-
-style.css
-56: warning at line 556, col 1
-Rule doesn't have all its properties in alphabetical order.
-.preamble {
 
 style.css
 57: warning at line 568, col 3
@@ -197,16 +166,6 @@ style.css
 62: warning at line 585, col 1
 Adjoining classes: .preamble.preamble   p
 .preamble.preamble p {
-
-style.css
-63: warning at line 590, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .preamble {
-
-style.css
-64: warning at line 606, col 1
-Rule doesn't have all its properties in alphabetical order.
-.explanation {
 
 style.css
 65: warning at line 623, col 3
@@ -264,19 +223,9 @@ Heading (h3) has already been defined.
   .participation h3 {
 
 style.css
-84: warning at line 737, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .participation {
-
-style.css
 85: warning at line 738, col 5
 Using width with padding can sometimes make elements larger than you expect.
     padding: 0 20px 20px 110px;
-
-style.css
-88: warning at line 770, col 1
-Rule doesn't have all its properties in alphabetical order.
-.benefits {
 
 style.css
 90: warning at line 779, col 3
@@ -297,11 +246,6 @@ style.css
 94: warning at line 783, col 11
 Heading (h3) should not be qualified.
 .benefits h3 {
-
-style.css
-95: warning at line 802, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .benefits {
 
 style.css
 96: warning at line 816, col 13
@@ -334,21 +278,6 @@ Heading (h3) has already been defined.
 .requirements h3 {
 
 style.css
-106: warning at line 877, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .requirements {
-
-style.css
-107: warning at line 887, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .requirements {
-
-style.css
-108: warning at line 940, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-archives {
-
-style.css
 111: warning at line 973, col 18
 Heading (h3) has already been defined.
 .design-archives h3 {
@@ -359,18 +288,8 @@ Heading (h3) should not be qualified.
 .design-archives h3 {
 
 style.css
-113: warning at line 976, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-archives ul {
-
-style.css
 116: warning at line 1032, col 19
 Heading (h3) has already been defined.
-.design-selection h3 {
-
-style.css
-117: warning at line 1032, col 1
-Rule doesn't have all its properties in alphabetical order.
 .design-selection h3 {
 
 style.css
@@ -389,11 +308,6 @@ Heading (h3) should not be qualified.
 .design-selection h3:hover {
 
 style.css
-122: warning at line 1054, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection ul {
-
-style.css
 124: warning at line 1062, col 3
 Unknown property 'grid-gap'.
   grid-gap: 30px;
@@ -404,11 +318,6 @@ Unknown property 'justify-items'.
   justify-items: center;
 
 style.css
-126: warning at line 1067, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li {
-
-style.css
 133: warning at line 1087, col 3
 Using height with padding can sometimes make elements larger than you expect.
   padding: 45px 15px 20px 15px;
@@ -417,11 +326,6 @@ style.css
 134: warning at line 1087, col 3
 Using width with padding can sometimes make elements larger than you expect.
   padding: 45px 15px 20px 15px;
-
-style.css
-135: warning at line 1095, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .design-selection li {
 
 style.css
 136: warning at line 1102, col 5
@@ -459,51 +363,6 @@ Using height with padding can sometimes make elements larger than you expect.
     padding: 40px 15px;
 
 style.css
-141: warning at line 1120, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(1) {
-
-style.css
-144: warning at line 1147, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(2) {
-
-style.css
-146:  warning at line 1171, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(3) {
-
-style.css
-148: warning at line 1189, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(4) {
-
-style.css
-150: warning at line 1207, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(5) {
-
-style.css
-152: warning at line 1240, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(7) {
-
-style.css
-155: warning at line 1258, col 1
-Rule doesn't have all its properties in alphabetical order.
-.design-selection li:nth-child(8) {
-
-style.css
-159: warning at line 1307, col 3
-Rule doesn't have all its properties in alphabetical order.
-  .design-selection {
-
-style.css
-158: warning at line 1312, col 1
-Rule doesn't have all its properties in alphabetical order.
-.zen-resources {
-
-style.css
 161: warning at line 1364, col 16
 Heading (h3) should not be qualified.
 .zen-resources h3 {
@@ -512,36 +371,6 @@ style.css
 163: warning at line 1364, col 16
 Heading (h3) has already been defined.
 .zen-resources h3 {
-
-style.css
-162: warning at line 1403, col 1
-Rule doesn't have all its properties in alphabetical order.
-footer {
-
-style.css
-167: warning at line 1431, col 1
-Rule doesn't have all its properties in alphabetical order.
-a.zen-validate-html {
-
-style.css
-166: warning at line 1439, col 1
-Rule doesn't have all its properties in alphabetical order.
-a.zen-validate-css {
-
-style.css
-167: warning at line 1450, col 1
-Rule doesn't have all its properties in alphabetical order.
-a.zen-license {
-
-style.css
-168: warning at line 1461, col 1
-Rule doesn't have all its properties in alphabetical order.
-a.zen-github {
-
-style.css
-169: warning at line 1472, col 1
-Rule doesn't have all its properties in alphabetical order.
-a.zen-accessibility {
 
 style.css
 173: warning at line 1498, col 5

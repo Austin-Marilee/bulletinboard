@@ -10,9 +10,10 @@
 
 //"Archives"links card--cream card with brown text at top right of screen
 .design-archives {
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
   background-color: $color-3;
   @include pin;
-  background-size: 40px;
   @include box-shadow;
   font-family: $primary-font;
   font-size: $font-size-mid;
@@ -22,7 +23,6 @@
   max-width: 200px;
   position: absolute;
   top: -15px;
-  -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
   transition: 0.5s;
   & h3 {
@@ -39,6 +39,7 @@
   }
   &:hover {
     -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
   @include breakpoint(xsmall) {
@@ -49,10 +50,11 @@
     }
   }
   @include breakpoint(small) {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     font-weight: normal;
     left: 70%;
     top: -75px;
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     & li {
       line-height: 1.6rem;
@@ -93,8 +95,8 @@
     background-color: $color-3;
     @include box-shadow;
     display: flex;
-    font-size: $font-size-mid;
     flex-flow: column nowrap;
+    font-size: $font-size-mid;
     height: 90px;
     justify-content: center;
     @include margin-padding(auto, 45px 15px 20px 15px);
@@ -221,6 +223,7 @@
   top: 10px;
   transform: rotate(-5deg);
   &:before {
+    -webkit-filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
     border-right: 140px solid transparent;
     border-top: 75px solid $color-4;
     bottom: 0;
@@ -233,6 +236,7 @@
     width: 0;
   }
   &:after {
+    -webkit-filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
     border-left: 140px solid transparent;
     border-top: 75px solid $color-4;
     bottom: 0;
@@ -271,7 +275,6 @@
     left: 50px;
     margin: 0;
     top: 15px;
-
   }
   @include breakpoint(medium) {
     left: 100px;
