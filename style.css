@@ -812,7 +812,7 @@ header h2:hover {
     max-width: 600px;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 62em) {
   .requirements {
     grid-column: 1/2;
   }
@@ -1153,7 +1153,7 @@ p[role=contentinfo] a {
 .design-selection li a:link {
   color: #382519;
 }
-@media (min-width: 60em) {
+@media (min-width: 62em) {
   .design-selection {
     bottom: 6%;
     font-size: 1.1rem;
