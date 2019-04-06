@@ -1155,9 +1155,9 @@ p[role=contentinfo] a {
 }
 @media (min-width: 53.125em) {
   .design-selection {
-    bottom: 8%;
+    bottom: 6%;
     font-size: 1.1rem;
-    margin: -40px;
+    margin: 0;
     max-width: 500px;
     position: absolute;
     right: 0;
@@ -1339,16 +1339,16 @@ a.zen-accessibility:hover {
 /*keyframes*/
 @keyframes pushpin {
   0% {
-    transform: translateY(4px);
+    background-position-y: 4px;
   }
   50% {
-    transform: translateY(5px);
+    background-position-y: 5px;
   }
   75% {
     background-size: 33px;
   }
   100% {
-    transform: translateY(5px);
+    background-position-y: 5px;
   }
 }
 @keyframes hover_flutter {
