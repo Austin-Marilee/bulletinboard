@@ -110,10 +110,10 @@ header h2 {
   text-align: center;
   transform: rotate(-1deg);
   width: 85%;
-  &.preamble h3 {
+  & h3 {
     font-size: $font-size-medium;
   }
-  &.preamble p {
+  & p {
     font-size: $font-size-small;
   }
   @include breakpoint(small) {

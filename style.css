@@ -565,11 +565,11 @@ header h2:hover {
           transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
 
-.preamble.preamble h3 {
+.preamble h3 {
   font-size: 1.3rem;
 }
 
-.preamble.preamble p {
+.preamble p {
   font-size: 1rem;
 }
 
