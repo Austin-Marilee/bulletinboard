@@ -186,7 +186,7 @@
   & li a:link {
     color: $color-2;
   }
-  @include breakpoint(medium) {
+  @include breakpoint(softmed) {
     bottom: 6%;
     font-size: $font-size-mid;
     margin: 0;

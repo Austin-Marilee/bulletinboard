@@ -5,6 +5,11 @@
       @content;
     }
   }
+  @else if $break==softmed {
+    @media (min-width: $break-softmed) {
+      @content;
+    }
+  }
   @else if $break==medium {
     @media (min-width: $break-medium) {
       @content;
