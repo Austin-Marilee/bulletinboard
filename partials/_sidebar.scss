@@ -15,7 +15,6 @@
   background-color: $color-3;
   @include pin;
   @include box-shadow;
-  font-family: $primary-font;
   font-size: $font-size-mid;
   font-weight: normal;
   left: 20px;
@@ -26,7 +25,6 @@
   transform: rotate(-5deg);
   transition: 0.5s;
   & h3 {
-    font-family: $primary-font;
     margin: 35px 0 0 0;
     text-transform: capitalize;
   }
@@ -215,7 +213,6 @@
   background: url('images/blue-leaves.png') 85% 120% no-repeat, url('images/pin.svg') 50% 0 no-repeat, #ffffff;
   background-color: $color-4;
   background-size: 150px, 40px;
-  font-family: $primary-font;
   margin: 30px auto 0;
   max-width: 200px;
   padding: 20px 20px 200px 20px;

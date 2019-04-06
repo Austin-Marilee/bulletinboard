@@ -942,7 +942,6 @@ p[role=contentinfo] a {
   background-size: 40px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: normal;
   left: 20px;
@@ -964,7 +963,6 @@ p[role=contentinfo] a {
 }
 
 .design-archives h3 {
-  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 35px 0 0 0;
   text-transform: capitalize;
 }
@@ -1315,7 +1313,6 @@ p[role=contentinfo] a {
   background: url("images/blue-leaves.png") 85% 120% no-repeat, url("images/pin.svg") 50% 0 no-repeat, #ffffff;
   background-color: #ec637d;
   background-size: 150px, 40px;
-  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 30px auto 0;
   max-width: 200px;
   padding: 20px 20px 200px 20px;
@@ -1490,30 +1487,36 @@ a.zen-accessibility:hover {
 /*keyframes*/
 @-webkit-keyframes pushpin {
   0% {
-    background-position-y: 4px;
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
   }
   50% {
-    background-position-y: 5px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   75% {
     background-size: 33px;
   }
   100% {
-    background-position-y: 5px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 @keyframes pushpin {
   0% {
-    background-position-y: 4px;
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
   }
   50% {
-    background-position-y: 5px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   75% {
     background-size: 33px;
   }
   100% {
-    background-position-y: 5px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 
