@@ -448,8 +448,6 @@ header h2 {
   width: 135px;
 }
 header h2:hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -533,15 +531,13 @@ header h2:hover {
   width: 85%;
 }
 .preamble:hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
-.preamble h3 {
+.preamble.preamble h3 {
   font-size: 1.3rem;
 }
-.preamble p {
+.preamble.preamble p {
   font-size: 1rem;
 }
 @media (min-width: 45em) {
@@ -576,12 +572,11 @@ header h2:hover {
   font-size: 1rem;
   margin: 0 0 20px 0;
   padding: 30px;
+  -ms-transform: rotate(1deg);
   transform: rotate(1deg);
   z-index: 20;
 }
 .explanation:hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -592,9 +587,8 @@ header h2:hover {
 }
 @media (min-width: 53.125em) {
   .explanation {
-    -ms-transform: translateY(30px);
-    -webkit-transform: translateY(30px);
     max-width: 80%;
+    -ms-transform: translateY(30px);
     transform: translateY(30px);
   }
 }
@@ -606,6 +600,7 @@ header h2:hover {
     position: absolute;
     right: 30px;
     top: 130px;
+    -ms-transform: rotate(3deg);
     transform: rotate(3deg);
   }
 }
@@ -618,6 +613,7 @@ header h2:hover {
   border: 30px solid #4b5548;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 30px 0 15px -30px;
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   width: 100%;
   z-index: 50;
@@ -628,6 +624,7 @@ header h2:hover {
   font-size: 1.3rem;
   margin: 40px 0 0 -5px;
   padding: 10px;
+  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
 .participation p {
@@ -637,6 +634,7 @@ header h2:hover {
   line-height: 1.2rem;
   margin: 0;
   padding: 5px 25px 25px 20px;
+  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
 .participation p:nth-of-type(1) {
@@ -678,6 +676,7 @@ header h2:hover {
     -webkit-transform: rotate(-3deg);
     padding: 0 10px 10px 50px;
     text-align: right;
+    -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
   .participation h3 {
@@ -702,6 +701,7 @@ header h2:hover {
   height: 100%;
   left: -5px;
   position: absolute;
+  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
   width: 100%;
   z-index: -1;
@@ -877,12 +877,11 @@ p[role=contentinfo] a {
   max-width: 200px;
   position: absolute;
   top: -15px;
+  -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
   transition: 0.5s;
 }
 .design-archives:hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -900,7 +899,6 @@ p[role=contentinfo] a {
 }
 .design-archives:hover {
   -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 @media (min-width: 35.9em) {
@@ -920,6 +918,7 @@ p[role=contentinfo] a {
     font-weight: normal;
     left: 70%;
     top: -75px;
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   .design-archives li {
@@ -944,7 +943,6 @@ p[role=contentinfo] a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 40px;
-  background-size: 35px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-left: auto;
   margin-right: auto;
@@ -956,8 +954,6 @@ p[role=contentinfo] a {
   text-transform: capitalize;
 }
 .design-selection h3:hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -978,6 +974,7 @@ p[role=contentinfo] a {
   display: flex;
   flex-flow: column nowrap;
   font-size: 1.1rem;
+  flex-flow: column nowrap;
   height: 90px;
   justify-content: center;
   margin: auto;
@@ -1026,8 +1023,6 @@ p[role=contentinfo] a {
   transform: rotate(-3deg);
 }
 .design-selection li:nth-child(1):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1044,8 +1039,6 @@ p[role=contentinfo] a {
   transform: rotate(3deg);
 }
 .design-selection li:nth-child(2):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1060,8 +1053,6 @@ p[role=contentinfo] a {
   transform: rotate(2deg);
 }
 .design-selection li:nth-child(3):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1076,8 +1067,6 @@ p[role=contentinfo] a {
   transform: rotate(-5deg);
 }
 .design-selection li:nth-child(4):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1092,8 +1081,6 @@ p[role=contentinfo] a {
   transform: rotate(3deg);
 }
 .design-selection li:nth-child(5):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1105,8 +1092,6 @@ p[role=contentinfo] a {
   background-size: 35px;
 }
 .design-selection li:nth-child(6):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1121,8 +1106,6 @@ p[role=contentinfo] a {
   transform: rotate(-3deg);
 }
 .design-selection li:nth-child(7):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
@@ -1137,8 +1120,6 @@ p[role=contentinfo] a {
   transform: rotate(2deg);
 }
 .design-selection li:nth-child(8):hover {
-  -webkit-animation: pushpin 0.5s;
-  -ms-animation: pushpin 0.5s;
   animation: pushpin 0.5s;
   transition-timing-function: cubic-bezier(0.1, 1.11, 0.01, 0.99);
 }
